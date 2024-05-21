@@ -1,0 +1,7908 @@
+Easy C++ Programming Guide
+
+
+
+
+
+Step-By-Step Guide To Learn C++ Programming With Hands-On Project
+
+
+
+
+
+Robert Matthew
+
+
+
+
+
+Copyright 2021 - All intellectual property rights are reserved.
+
+The contents of this book may not be copied, duplicated, or distributed in any way, or transmitted without the author's express written consent. The publisher will not be held legally liable for any damages, injuries, or monetary loss caused directly or indirectly by the material contained herein.
+
+Legal Notice:
+
+Without the author's permission, you may not change, distribute, sell, use, quote, or paraphrase any part of this book.
+
+Disclaimer Notice:
+
+Would you please keep in mind that the information in this document is strictly educational? There are no express or implied guarantees of any kind. Readers understand that the author is not providing legal, economic, medical, or other professional advice. Before attempting any of the strategies described in this book, please seek the advice of a licensed professional.
+
+Through reading this text, the reader acknowledges that the author is not responsible for any direct or indirect damages resulting from using the information found therein, including, but not limited to, errors, omissions, or inaccuracies.
+
+
+
+
+
+Table of Contents
+
+C++ Programming Guide
+
+Introduction
+
+Chapter 1
+
+Introduction to C Programming Language
+
+What is Programming?
+
+What is a Source code?
+
+What is an IDE?
+
+Running Code Blocks
+
+Chapter 2
+
+STARTING THE JOURNEY
+
+COMPUTER BASICS
+
+DEFINING SOURCE CODE
+
+Examining Hello World
+
+Comments
+
+USING VISUAL STUDIO
+
+CREATING A NEW PROJECT
+
+WORKING WITH TEXT
+
+ASSEMBLING STRINGS
+
+WORKING WITH ESCAPE CHARACTERS
+
+STORING STRINGS
+
+DISPLAYING STORED STRINGS
+
+THE TOWN CRIER PROGRAM
+
+STORING STRINGS WITH CIN
+
+WORKING WITH NUMBERS
+
+INTRODUCING INTEGERS
+
+TAKING ACTION WITH OPERATORS
+
+THE MODULUS OPERATOR
+
+Chapter 3
+
+MAKING CHOICES WITH CONTROL STATEMENTS
+
+CHOOSING CODE WITH SELECTION STATEMENTS
+
+Merging with the Equivalence Operator
+
+The while Loop
+
+Using the for Statement
+
+The while Loop
+
+Looping with the do-while Loop
+
+CHAPTER 4
+
+General Features of C++
+
+The main function
+
+Problem
+
+Chapter 5
+
+Programming in C++
+
+Operators
+
+Assignation
+
+Arithmetic operators
+
+Relational and logical operands
+
+Initialization of vectors and matrices
+
+Chapter 6
+
+C Language Comparisons
+
+If Statements
+
+Else Statements
+
+Else if Statements
+
+Switch/Else Statements
+
+The While Loop
+
+Do/While Loop
+
+The For keyword
+
+The Nested Loop
+
+Chapter 7
+
+Anatomy of a Function
+
+Chapter 8
+
+Working with Strings
+
+Strcat / Concatenation
+
+Strcmp / String compare
+
+Strstr/ String String
+
+Chapter 9
+
+C Language Constants
+
+Chapter 10
+
+C language Arrays
+
+Anatomy of an Array
+
+Multi-dimensional Arrays
+
+Chapter 11
+
+C Language Structures
+
+Chapter 12
+
+C Language Time Functions
+
+Chapter 13
+
+C Language Variables
+
+Chapter 14
+
+C Language Pointers
+
+Dual Nature of Pointers
+
+Array Manipulation Using Pointers
+
+Pointer Functions
+
+Pointer Arrays
+
+Conclusion
+
+
+
+
+
+Introduction
+
+
+
+Thank you for purchasing Easy C++ Programming Guide. We will offer you an outline of the topics you must master before beginning programming in the C language in this book. We'll go over the various things you should be aware of before diving into the development of more complex applications for different operating systems.
+
+There are numerous advantages to using the C programming language. It does, however, include several minor details that can be perplexing. Being unable to comprehend these elements will very certainly cause you trouble in the future.
+
+We're going to talk about what those elements are in this book. We'll also go over what C is, where it comes from, and all of the core ideas you'll need to know before starting programming. We'll also demonstrate how to install and use the Code Blocks IDE, which is helpful while writing C code.
+
+We hope you enjoy this book as much as we enjoyed reading it.
+
+
+
+
+
+Chapter 1
+
+
+
+Introduction to C Programming Language
+
+
+
+When you start learning to program, you'll find yourself surrounded by odd and potentially strange terms, as well as fancied jargon. We'll go over those terms and provide an overview of the complete programming process in this book. You've probably previously seen a later chapter in this book and are keen to start writing codes. A basic understanding of a few keywords and programming concepts is required.
+
+The C Programming Language has a long and illustrious history.
+
+A computer scientist at AT&T's Bell Laboratories began developing several programs for his use in 1972. Dennis Ritchie's initial work has since evolved into the C programming language, which is now extensively used worldwide.
+
+He was attempting to make computation as straightforward as possible. Dennis Ritchie concluded that the assembly language he was using at the time was far too complicated. They intended to buck the trend by developing a small, straightforward programming language for a minicomputer.
+
+Dennis Ritchie intended to keep an efficient computer programming language to write programs and a computer programming language to develop a programming community—fellowship. They realized from earlier experiences that the true nature of joint computing as given by time-shared, remote access systems motivates post-programming conversation to write computer code into a terminal.
+
+The C programming language is a structured and general-purpose language. It's also known as a procedural programming language.
+
+C was not created with a specific application in mind. It was, nonetheless, ideally adapted for commercial and scientific uses. It provides a variety of features for applications, including control structures, looping statements, and micros. The following are some of the characteristics of the C programming language:
+
+• Portability
+
+• Flexibility
+
+• Effectiveness and Efficiency
+
+• Reliability
+
+• Interactivity
+
+
+
+
+
+What is Programming?
+
+
+
+Programming is the process of developing software. The physical part of an electronic gadget, such as a computer, phone, tablet, gaming console, microcontroller, or another widget, is controlled by software. A programming language is used to express these instructions. The C programming language, which was created in the early 1970s, is the language used in this book.
+
+It's pretty old. Indeed, the C programming language has come to be known as the Latin of programming languages. C, unlike Latin, is not extinct. Despite the introduction of newer and more sophisticated programming languages, C programming continues to be popular. C, like Latin, serves as the foundation for many other programming languages. If you know C, you'll have an easier time learning the other languages.
+
+The syntax and other rules of the programming language will be discussed in a later chapter. For now, just remember that the code you write is referred to as source code.
+
+
+
+
+
+What is a Source code?
+
+
+
+A source code file is a plain text file containing the programming language, correctly formatted and written. The. A c filename extension is used in C to save the file. To create source code, a text editor is utilized. Any text editor would suffice. However, several include helpful features like color coding, line numbers, grammar checking, and other tools.
+
+After that, the source code is turned into object code. A compiler is a program that generates the object code. CC, which stands for C compiler, is the conventional moniker for the C language compiler. The compiler reads the source code and converts it to object code.
+
+The filename extension for object code files is. o, and they have the same name as the source code file. Linking is the next step in the process. Because current compilers compile and link, it's easy to overlook that linking is a separate procedure.
+
+The linker takes the object code file and mixes it with libraries written in the C programming language. The language's workhorse is its libraries. They're made up of routines and functions that govern whatever device you're working on. The end product, if all goes properly, is a software file. After that, you can run the software to ensure that it works as expected. If not, you must repeat the process: modify, compile and link, or "build," and test run.
+
+The command prompt or terminal gave birth to all of these tools: the editor, compiler, and linker. You'll still be able to find them there. Because it is speedy, programmers do a lot of coding at the command prompt. The usage of an IDE, or Integrated Development Environment, is becoming frequent.
+
+
+
+
+
+What is an IDE?
+
+
+
+The tools for editing, compiling, linking, and running are combined in an IDE or Integrated Development Environment. It also includes debugging tools, complicated program creation tools, graphical tools, and other features.
+
+The modest command line compiler and linker, on the other hand, sits beneath it all. The steps are the same: edit, compile, link, and run. Before you get things right, you'll have to do a lot of repeating and reworking.
+
+The good news is that you can find all of the tools you'll need to get started programming for free on the internet. The bad news is that you'll have to hunt down and install the program yourself. This will not be a problem for you because we will show you how to do it in this book.
+
+You'll learn how to choose a solid IDE (Integrated Development Environment) and a C language compiler, as well as how to set up and configure everything. On the Internet, you'll find a plethora of IDEs. Microsoft's IDE is Visual Studio, while Apple's is Xcode.
+
+You are free to use those tools if you are already familiar with them. However, for this book, we've gone with the Code Blocks IDE. The beautiful thing about Code Blocks is that it includes everything you'll need to get started. Unlike other IDEs, you won't have to go looking for anything once it's installed. All you have to do now is download and install the software, and you're ready to start. Code Blocks are available for free download from the developer's website at http://www.codeblocks.org.
+
+Navigate to that website using your preferred browser (Chrome, Firefox, or Internet Explorer). Look for the download link on that page. Remember that online pages change from time to time, so the page you see below may seem different.
+
+
+
+
+
+Running Code Blocks
+
+
+
+The primary window will like the one below:
+
+
+
+This area is referred to as the workstation. The management panel is located to the left. This is a list of the Code Blocks projects you're working on. The editor where you will write the code is located in the center. A plethora of tabs can be found towards the bottom of the page. Messages or other valuable information can be shown on these.
+
+You should now configure a few Code Blocks settings to assist you in using the IDE in this book. To begin, select the settings editor. Make sure that the option "Display line numbers" is selected. All of the other parameters listed below should be set to their default values.
+
+
+
+To change the font, click the pick button in the font box. For clarity, it is recommended that you use a monospaced typeface. Set your editor's font to a 12-point size to make it easier to read on your screen. To close the general settings window, click OK.
+
+Second, change the font size of the build messages. Select Environment from the drop-down menu. After that, select the view icon.
+
+Set the font size of the message logs to 10 or 12, which is easier to read. When you're finished, click OK.
+
+Congratulations. This book has been set up to work with Code Blocks.
+
+If you want, you can now exit Code Blocks. You may be told that the perspective has shifted if you resign. Save the view and click the small box to avoid being troubled by the message again.
+
+Creating programs, or "programming," usually entails using a programming language to type the program's source code—instructions—and then compiling and linking the source code together to form the program. The produced program is generally in the form of an.exe file for Windows or a.sh file for a UNIX-based operating system such as Linux or MAC.
+
+After that, you run the program to see if it accomplishes what it's supposed to do. To put it another way, test it to see if it works. In the next chapter, we'll teach you how to use Code Blocks to demonstrate this approach. We'll go over how to write a sample computer program in the C programming language and run it. In addition, we'll show you how to use the IDE to find and solve errors in your application.
+
+Start your computer when you've completed installing Code Blocks. The first page you'll see is the Code Blocks home page. If you're working on a computer that already has Code Blocks installed and has been used to write programs before, go to the Code Blocks menu and select View > Start page to see the start page.
+
+The majority of the effort done on the Code Blocks IDE is focused on projects. A Code Blocks C language project might be as simple as a program or as complex as a large online computer game. On the start page, click the Create New Project link to start a new Code Blocks project. Note that you do not need to perform this step if you are reading and working on C language project files that have been downloaded from somewhere other than your computer.
+
+However, if you need to create a new C language project in the Code Blocks IDE, especially for the console programs/applications that we will be utilizing in this book, choose the Console Application option when creating a new project.
+
+
+
+Select the C language option after selecting Console Application. Choose a location to save the project file and give it a name. On the Mac, make sure the words don't contain any spaces; otherwise, the application won't execute Code Blocks. Select only "Release" and click Finish.
+
+Click the Open button on the toolbar to open a pre-written source code file in Code Blocks. Navigate to the folder holding the source code file that has already been written. Click "Open" after selecting the pre-written C file you want to open. The source code written in that file will then appear in the Code Blocks editor window.
+
+Line numbers are not included in C code, but the Code Block editor will display them in the leftmost column. Line numbers are helpful not just for reference in this text but also for locating faults. On the right-hand side of the line numbers is the source code itself. The text is color-coded, making it easier to distinguish between the various components of C and discover problems when things aren't colored appropriately.
+
+After developing the source code, the following step is to compile and link it. That step is consolidated into a single action called Build in Code Blocks. To start working on your project, go to this page and click the Build icon:
+
+
+
+The action takes place in the Build log, then the Build messages tab, at the bottom of the screen. Code Blocks will display a little red box next to the line number where the error occurs if your source code has errors. To review the specific messages linked to the error, go to the Build log page.
+
+The error messages will also tell you which line the problem is on. If you find a mistake in your code, fix it before clicking the Build button again. If there are no more issues, save the file and rebuild the project to ensure that everything is working correctly.
+
+
+
+Go to the download link to get started. Select the binary release to download. On the next screen, select your computer operating system from the drop-down menu: Windows, Linux, or Mac OSX. Look for the setup.exe file that includes the MinGW compiler on Windows. On the screen below, for example, it says "code blocks-16.01mingw-setup.exe." Although the numbers may vary, it is the connection you require.
+
+
+
+Choose from 32-bit and 64-bit Linux distributions. Choose a Code Blocks version that isn't testing or debugging. By selecting a download link, try to match your exact Linux distribution.
+
+
+
+There is only one option for the MAC. Select the appropriate link from the list on the right. As a download link, we recommend using sourceforge.net. The download begins right away. Wait until it's finished.
+
+The next step is to locate and install Code Blocks from the downloaded file. Open the Downloads folder, which is usually where the file is stored. You might be able to access that folder from your web browser as well.
+
+Double-click the file on Windows to open it and begin the installation process. Follow the installation wizard's instructions. Don't be concerned about any of the possibilities. They're all OK. Code Blocks will eventually be installed with a desktop shortcut icon. If you want to start Code Blocks right away, click the Yes button, but you don't have to.
+
+You must unpack the archive you downloaded on MAC and Linux. To unpack the archive, double-click the icon in a folder window. You'll end up with a Code Blocks app file on the MAC, which is a folder. That icon should be moved to the application's folder.
+
+To open the archive on Linux, double-click it. Then, depending on how your Linux distribution handles whatever is in the library, you'll have to execute the install application. If it's an RPM file, for example, open it to begin the package installation process. You must configure Code Blocks after it has been installed. Another chapter deals with this subject.
+
+You may now get a warning about options -s on the Macintosh. It's just a linker mistake, so disregard it. To see the program's brilliance, press the Run button. The software runs in a command prompt window in Windows. A terminal window emerges on the Mac and Linux. You can also see any startup scripts you've written in that window. That section of the output should be ignored. Otherwise, you're looking at the result of the application.
+
+Return to Code Blocks after closing the output window. Press the Enter key on your keyboard on Windows. In UNIX, type "Exit" and press the Enter key if the terminal window does not close. It is suggested that you do so. Otherwise, the terminal windows will stack on top of one another. You're all set to start working on your first project. When you exit Code Blocks, it will ask if you want to save the current perspective. Go ahead and press the Yes button.
+
+
+
+
+
+Chapter 2
+
+
+
+STARTING THE JOURNEY
+
+
+
+Programming may appear to be a complex undertaking, but don't be alarmed. This chapter was created to allow you to get your feet wet without diving into the more complicated aspects of programming. A talk on computers kicks off the branch. We'll demonstrate how they operate in practice. The basics of constructing a program are covered in the next chapter. The next stage is to become familiar with Visual Studio, a C++ compiler. Then you can experiment with text and numbers. With our assistance and your inventiveness, you'll be able to write your simple applications in no time. We're confident that your programs will get more complex in the future, but everyone has to start somewhere. Your adventure begins right now!
+
+The following items are included at the start of your adventure:
+
+How computers work
+
+How to write code
+
+How to write your first program
+
+How to use Visual Studio
+
+How the programming development cycle works
+
+How to use text
+
+How to use numbers
+
+
+
+
+
+COMPUTER BASICS
+
+
+
+A computer is made up of many different parts. The keyboard, mouse, and monitor, for example, are all easily identifiable. Others are internal and inaccessible to the inexperienced user. The CPU (central processing unit) and memory are two examples.
+
+The CPU is the computer's brain. It is from this circuit-laden core that all decisions are made. If your laptop ever went zombie on you and you wanted to know where to stab, this is the section to look for. As a result, the heinous beast would return to the underworld from which it originated!
+
+Fortunately, you won't have to worry about zombie PCs for a long time, so file it away. Memory is the next most significant component. This is where data and instructions are stored, and it's also known as RAM (random-access memory).
+
+What are the data and instructions? You've probably heard these terms before, but what do they signify in this context? Data, on the other hand, can relate to a variety of things. The computer uses any information, such as keyboard input, file contents, and web server requests. Instructions are a unique type of information. They essentially "instruct" the CPU on what to do next. Add these two integers, move this data here, and then go to the following command. These are some instances of instructions for the CPU.
+
+The computer's primary function is to carry out these instructions. Obtain the following education. Put it into action. Obtain the following command. Put it into action. Time and time again. Except that everything happens so quickly. A one-gigahertz processor can process one billion instructions per second! There is nothing to be excited about (though I'm not sure why anyone wants to get excited about anything... motivation appears to be lacking).
+
+
+
+
+
+DEFINING SOURCE CODE
+
+
+
+Computers work by carrying out a succession of simple commands, but programmers no longer have to develop programs at this level. Particular languages, known as programming languages, have been developed to communicate concepts much more accessible. It is up to a compiler, an intermediate program, to convert ideas stated in a programming language into a series of basic commands that the computer can understand.
+
+You might be wondering why you can't just tell the computer what to do. We want to say to a computer to "go to this webpage" or "play this song," for example. The issue is that English (along with all other so-called "natural" languages such as French, German, and others) is just too complicated. C++ is a more straightforward and more precise programming language. Nonetheless, well-written code can be virtually as simple to understand as English.
+
+C++ follows the same syntax, punctuation, and spelling conventions as English. The difference is that C++ has considerably stricter rules. The central concept is still communicated if we say "The cat runs slowly," rather than "The cat is running slowly." The lack of adherence to C++ norms is a far more significant issue. Failure to follow the C++ guidelines to the letter can lead to a slew of mistakes and problems.
+
+And, just as in English, grammar and punctuation aren't everything. To write good code, one must be able to express oneself succinctly and beautifully. This is a skill that programmers are constantly honing. Professional programmers with years of experience in the profession are still working to enhance their coding skills. But, enough talk. Let's look at some code!
+
+
+
+
+
+Examining Hello World
+
+
+
+Let's dive right into the mysterious world of C++, gentle reader. Though the strange symbols and cryptic terminology may be confusing, they will all become evident with time. So get your torch ready and join us as we explore this dark dungeon!
+
+//1.1 – Hello World – Mark Lee
+
+#include <iostream>
+
+int main( void )
+
+{
+
+using std::cout;
+
+cout << "Hello World!\n";
+
+return 0;
+
+}
+
+This is a fully functional C++ program. The words "Hello World" are simply displayed on the screen. Let's break it down the line by line now!
+
+A bibliographical section is frequently included at the end of research papers. As you probably know, this section is utilized to provide sources for the information used to compose the essay. The only difference is that in C++, the bibliography comes first. A programmer can offer a "reference" to another piece of code to show where that capability comes from. The second line is an example of this:
+
+#include <iostream>
+
+The file being referenced is called stream. This file contains the necessary functionality to print to the screen. If you wanted to refer to a separate file, for example, studio, it would look like this:
+
+#include <cstdio>
+
+What exactly is a stream file? What is the source of it? My interested reader, this file is part of the C++ Standard Library. The C++ Standard Library is a C++ code that includes several valuable features, such as text display on the screen. This library is readily available at all times. We shall present additional portions of the library throughout this book. We utilize iostream in this program. The C++ Standard Library's stream component is used to show text on the screen or read input from the keyboard.
+
+The following line is empty. Why? Is there some relevance to this? Is it mandatory to include a blank line here? No, that is not the case. The blank line is only there to give everything some breathing room. Whitespace is said to be ignored in C++. This means that you can place spaces, tabs, and blank lines almost wherever in the document without changing the meaning. The program would be the same if this blank line were removed! So, what's the deal with it being there? It does, however, make the code more readable. It would be far more challenging to10444read and understand if all of the code was crammed together without any gap. It's critical to make your code as plain as possible not to waste time trying to decipher it.
+
+Now we come across some weird words. Void? Int? No, the gap does not imply an empty pit of sorrow (though C++ might make you feel that way). And int stands for integer, which we'll discuss later in this chapter. You'll see that this line is followed by a pair of curly braced lines ( and ). That framework is crucial. The entire item is referred to as the primary function. There must be the main function in every program. We'll go through tasks in more detail in Chapter 4, but for now, put all of your code inside those funny braces.
+
+Another aspect of using the C++ Standard Library is the first line of the primary function. It indicates that we'll be using something from the standard library (std) in this function and called out. What is the purpose of this line? In the C++ Standard Library, everything is contained under a namespace. In coming chapters, we'll go through them in greater depth, but for now, it simply means that everything in the library must begin with std::. This is redundant if this line is placed at the top of the function. We can say out without the std:: prefix in the following bar.
+
+So, what exactly is this cout term? What's more, how do you say it? Cout, on the other hand, is used to print items on the screen. The word is pronounced "see-out." The out in cout specifies how it will be used for output. The data that exits your program is referred to as output. Input, on the other hand, is information that your software receives. The C++ Standard Library has another word, cin, used to read input from the keyboard. That will be discussed later.
+
+You'll notice that the primary function's lines all end with a semicolon (;).Because whites-pace is ignored, all of the statements might be on the same line. The only method to distinguish where one statement finishes and the next one begins is to employ a separator. Semicolons are used in C++. You'll learn about statements that don't require semicolons in Chapter 3, "Making Choices with Control Statements," but until then, every statement you meet must end with a semicolon.
+
+Patient reader, we've finally arrived at the meat of this show. This is where the actual text is displayed on the screen. When you initially looked at the code, you probably assumed as much. "Hello World!" is in quotes, and it appears to be directed to this cout word. That's how you print to the screen, then! The strange n at the end denotes the start of a new line. You can try removing this new line and seeing what happens when we learn how to compile and run this program in the future part.
+
+The last line of the primary function is just used to signify the function's finish. The word return implies "ok, this function is finished," while the value 0 means "everything is well."
+
+
+
+
+
+Comments
+
+
+
+A comment appears on the first line of the Hello World program. It has no bearing on how the program functions. You can tell the compiler to ignore the rest of a line by typing two forward slashes (//) together. The objective of comments is to aid in the comprehension of the code. There are two ways to write comments. A single-line comment (such as the one above) takes up only one line. As illustrated here, anything following the / on the line is ignored:// I am a one-person army.
+
+A different C++ remark lets you expand a single, long comment (to as many lines as you want): /* The globe is dominated by dragons */or /* Dragons rule the world. */ the world is ruled by dragons
+
+Although it can be perplexing, you can include a multiple-line comment into code at practically any time, as shown here:
+
+cout << /* prints out Hello World */ “Hello World\n”;
+
+However, just because an option exists does not imply you should take use of it. This type of comment can quickly render your code illegible. According to a good rule of thumb, use comments to make your code more readable. If they aren't cooperating, take them out. Nothing in a remark has any effect on the code. Only use comments to describe complicated or essential aspects of the program in plain English. When converting the program to machine code, the compiler ignores the comments.
+
+
+
+
+
+USING VISUAL STUDIO
+
+
+
+You'll learn how to utilize Visual Studio to write your first program in this part. Visual Studio is a development environment that allows you to work on multiple projects simultaneously (IDE). A programmer needs various tools to execute his job, including an editor to create code, a file browser to organize all of his files, a compiler to convert source code to executable code, and a debugger to investigate a running program. In an IDE, all of these tools are combined into a single program. Some programmers want to have everything in one place and integrated. Others prefer to utilize a different application for each tool, allowing them to create their customized work environment. Alternatives to Visual Studio are discussed in Appendix C.
+
+We assumed you were using Visual C++ 2008 Express Edition when we produced this book (freely available). It isn't a big problem if you aren't, though. Regardless of which compiler you choose, most of the information in this and other chapters will apply. Visit HTTP:// cplus.about.com/od/learnc/ss/vc2008.htm for complete information on how to download and install Visual C++ 2008 Express Edition.
+
+It's time to get started on your programming career. Try it out on your computer as we demonstrate how to build a project with Visual Studio and display the code. The unusual becomes more natural with practice.
+
+
+
+
+
+CREATING A NEW PROJECT
+
+
+
+It will appear the first time you open Visual Studio, as seen in Figure 1.1. There is no magic going on, as you can see (well, maybe just a little). Except for Visual Studio, which you use to create other applications, Microsoft Word and Internet Explorer are just applications.
+
+Follow these steps to start a new C++ project in Visual Studio (note that the titles of menus, dialog boxes, and other choices may alter depending on which version of Visual Studio you're using):
+
+Select New and then Project from the File menu.
+
+Under Project Types, choose Win32.
+
+Under Templates, choose Win32 Console Application.
+
+In the Name field, type Hello World. As you input, you'll notice that the Solution Name field fills in as well. See Figure 1.2 for more information.
+
+
+
+
+
+Click the OK button. The dialog window for the Win32 Application Wizard will appear. This is where you can make your project even more unique. Next should be selected.
+
+Additional project options can be selected here. Empty Project is the only choice you'll need right now, so check it out. Finish by clicking the Finish button. See Figure 1.3 for more information.
+
+
+
+The project is now completed.
+
+
+
+
+
+The file has now been created and is ready to be edited. Input the program "Hello World" from the previous section. For the sake of brevity, we left the comments blank. See Figure 1.6 for further information.
+
+
+
+Once you've completed inputting the code, hit Ctrl + F5 or go to the Debug menu and select Start Without Debugging. In the bottom window, called Output, the compilation results will be presented. If a compilation error occurs, it will be displayed here. Make sure your code strictly follows the listing. It's pretty easy to overlook a semicolon or make a mistake.
+
+As seen in Figure 1.7, a new window should appear. You've just finished your first program, which is fantastic!
+
+
+
+
+
+WORKING WITH TEXT
+
+
+
+Before the emergence of images, all programming was based on text. Text-based adventure games and bulletin board systems were our first programming experiences. Text is still an essential part of programming. In this section, you'll learn how to put together and store text.
+
+The most basic medium for displaying program output is text. Because most programs' output can be displayed with only text, this book starts with just text. This strategy also permits us to defer discussion of visual intricacy until subsequent chapters.
+
+A string is a term used in the computer world to describe a chunk of text. A string is a collection of characters; a character is a symbol that may be entered from a keyboard, including spaces, in general. "Hello World" is a string in the "Hello World" program, for example.
+
+
+
+
+
+ASSEMBLING STRINGS
+
+
+
+The computer interprets strings like "For Honor!!!" as a series of characters, each of which has one letter or space (F is the first character, o is the second, and so on). Strings are enclosed with double quote marks. "a," "(space), "4," and "%" are all single-character strings, for example.
+
+Although it may appear complicated, creating strings is pretty simple. Some string examples are provided below. Only a few lines of text are surrounded by quote marks, as you can see."For Honor!!!"
+
+"Pass me my sword."
+
+"Who put my staff on the wagon?"
+
+DISPLAYING STRINGS WITH COUT
+
+Now that you know how to build a strong, the first thing you'll probably want to do is put it on the screen. This section will demonstrate how to achieve it in a variety of ways.
+
+As we saw in the dissection of the "Hello World" program, printing to the screen is not a built-in functionality of C++. The C++ Standard Library provides this capability. To use it, you must perform a few specific things.
+
+To begin, you must include a reference to the required file at the top of your application. As the Hello World program demonstrated, this file displays text on the screen. The syntax (structure) of this reference is as follows:
+
+#include <iostream>
+
+This offers you access to the main components of the C++ Standard Library, but it's not the end of the story. Namespaces are used to arrange everything in the library. This means that before using anything from the library, you must first use std::. You'd have to write std::cout now to use cout, for example. This is time-consuming, and it's often easier to just utilize the std namespace to get the terms you need. As previously stated, the following code can be used to extract terms from a namespace:
+
+std::cout is used;
+
+You can use cout to display any string, for example: cout "For Valour!"
+
+Displaying Multiple Strings with cout
+
+You've mastered the fundamentals of cout, but there's still a lot more to learn about the instrument its strings. You can, for example, display multiple strings at once. Assume you wish to display two bits of text that are separated by two strings. If you follow the guidelines outlined above, This is how your code should look:
+
+Output: cout "Red"; cout "Dragon"; cout "Red"; cout "Dragon"; cout "Red"; cout "cout << ”Red”
+
+
+
+" Dragon";
+
+Output: Red Dragon
+
+Because you may use a single, longer string ("Red Dragon"), this is genuinely a simple example.
+
+In general, you structure your code in such a way that it is simple to read. At the start of each phrase, a new cout should be used. To display a sentence about dragons and another about elves, everything in the dragon sentence should come after one cout. Everything in the elven sentence should come after a separate cout. Your code will be more organized as a result and easier to read.
+
+
+
+
+
+WORKING WITH ESCAPE CHARACTERS
+
+
+
+Characters like quote marks (") and line breaks cannot be expressed literally in a string. If you include a quote mark in a string, the compiler will interpret it as the string's end. For example, to make a quotation string, you may write: "He said, "This is a quote. "
+
+On the other hand, the compiler will split this into two strings: "He said" and. "You get a syntax error because of the words. This is a quote that is believed to be non-strings. Line breaks present a similar issue. Because all strings must fit on a single line, a line break amid a string will result in a syntax fault. Problems like these, fortunately, have a remedy.
+
+Using escape characters as a solution is a solution. Characters that cannot be expressed are represented by escape characters (or meta-characters). To make an escape character, combine a backslash () with the specific character. The escape character for a quotation mark, for example, is " Here's how it looks in the code:
+
+"He stated, "This is a quote." N
+
+This code generates the specified string. If you print this string, He said, "This is a quote." would appear onscreen. There are other escape characters. The essential ones are summarized in Table 1.1.
+
+You'll want to get to know the majority of these escape characters because they'll come in handy. Some of them, such as the newline character (also called a line break), are essential.
+
+
+
+
+
+STORING STRINGS
+
+
+
+Strings can be stored in your software, so you don't have to type them in several times. Strings are stored in memory (discussed in length in Chapter 2, "Descending Deeper into Variables"). The C++ Standard Library, in addition to supporting the display of objects on the screen, also supports the storage of strings. The string code is stored in a file called string. You can use the C++ Standard Library by putting a particular line of code at the top of your program, as we saw with the "Hello World" program:
+
+#include'string"string>'string>'string> '
+
+Then, precisely as with cout, you indicate which specific portions from the standard namespace you want to incorporate into your code inside the primary function. std::string is used;
+
+When you wish to save a string, you must give it a name so that the computer understands which string you want to use later. For example, we'll memorize "A dragon is approaching" and label the string scream.
+
+However, there is one minor issue. C++ has a lot of memory storage capabilities. C++, for example, may store numbers in addition to strings. The rules for dealing with numbers differ from those for dealing with strings. As a result, you must also specify what is being stored. In Chapter 2, we'll go deeper into these distinctions. To store a string, you must give the following: The type of thing that is being stored (in this case, a string)
+
+The name of the string
+
+The characters that make up the string
+
+Once you've constructed all of these components, you are ready to store a string in memory: string yell = "A dragon is coming";
+
+First comes the type of thing being stored: a string. Second, comes the name of the string: yell. The equal sign tells the computer that the string, "A dragon is coming, " is stored in a yell. Last comes the semicolon, which tells the computer that you have finished the statement.
+
+
+
+
+
+DISPLAYING STORED STRINGS
+
+
+
+You've only shown literal strings up until this point.
+
+
+
+
+
+THE TOWN CRIER PROGRAM
+
+
+
+You've learned how to store strings and how to use cout to display them onscreen. Now it's time to put your newfound knowledge to the test by constructing the Town Crier software.
+
+Consider the situation: a dragon is approaching your hamlet, and you must issue a warning to everyone. The hamlet will be rescued if you can voice your warning four times in a row loud enough for everyone to hear. Only the saved string and cout can save the community. Therefore this is a job for our heroes. As a result, your goal is to write a program that repeats the text of your warning four times in succession.
+
+The following is a code listing that shows one approach to make this software, but we recommend that you don't look at it until you get stuck while making your own:
+
+//1.2 - Town Crier Program - Dirk Henkemans
+
+#include <iostream>
+
+#include <string>
+
+int main(void)
+
+{
+
+using std::cout
+
+using std::string;
+
+string yell = “A dragon is coming, take cover!!!\n”; cout << yell.c_str() << “\n”
+
+yell.c_str() << “\n”
+
+yell.c_str() << “\n”
+
+yell.c_str() << “\n”;
+
+return 0;
+
+}
+
+Output:
+
+A dragon is coming; take cover!!!
+
+A dragon is coming; take cover!!!
+
+A dragon is coming; take cover!!!
+
+A dragon is coming; take cover!!!
+
+RECEIVING INPUT
+
+When writing programs, it's common to want to be able to receive user input.
+
+You want to ask him things like what he wants to do next or his name.
+
+You'll discover how to do precisely that in this section.
+
+The word can (pronounced "see-in") is the most significant part of receiving input. Similar to how cout displays text on the screen, cin reads input from the keyboard. Because cin is also a part of the C++ Standard Library, the following files must be present:
+
+#include <iostream>
+
+Yes, that's right. It's in the same file as the cout. Stream deals with both input and output capabilities. Of course, you also need a using-declaration: using std::cin;
+
+And then you're finally set to begin receiving input from the user!
+
+
+
+
+
+STORING STRINGS WITH CIN
+
+
+
+You can save strings with cin in the same way you did previously, except that now you declare the name and assign the value subsequently. The cin object is used to assign this value. The keyboard or other input device is represented by the cin object, whereas the screen or other output device, such as a file, is represented by the cout object. In Chapter 5, "Designing Software: Object-Oriented Programming," you learn more about objects. An example of saving a user-input string is as follows: name of a string
+
+cin >> name;
+
+You'll notice that you're using cin in the same way you're using out. The less-than signs have been replaced with greater-than signs. These indicators show that the computer is accepting rather than showing data.
+
+- Hello Program – Dirk Henkemans /1.3 - Hello Program – Dirk Henkemans /1.3 - Hello Program – Dirk Henkemans /1.3 - Hello#include <iostream>
+
+#include <string>
+
+int main(void)
+
+{
+
+using std::cout;
+
+using std::cin;
+
+using std::string;
+
+string name = “”; // “” means empty string
+
+cout << ”What is your name?\n”;
+
+cin >> name;
+
+cout << “\nHello “ << name.c_str() << “\n”;
+
+return 0;
+
+}
+
+Output (bold text is user input):
+
+What is your name?
+
+Jackie
+
+Hello Jackie
+
+In the preceding code, the string name tells the computer that there is space in the computer for a name string. Remember that you must include the string component of the C++ Standard Library to use strings.
+
+The line that reads
+
+out << "What is your name?\n";
+
+The user is given a prompt.
+
+Following that, cout “hello“ name. C str() “n”; instructs the computer to begin on the following line.
+
+Even though the text still has a lot to teach us, you have a good grasp of it now to move on to numbers.
+
+
+
+
+
+WORKING WITH NUMBERS
+
+
+
+A computer is solely reliant on numbers. Everything that happens on a computer is built based on numbers. In the computer industry, having a good understanding of numbers is vital. You'll learn about basic math, the modulus operator, and how to use integers in this part (see Chapter 2 for more on integers).
+
+
+
+
+
+INTRODUCING INTEGERS
+
+
+
+On computers, data can be stored in a variety of ways. We'll only go over the fundamentals of integers and how to use them for the time being. All real numbers, including zero, as well as positive and negative numbers, are considered integers. 5, 0, and –100, for example, are all integers, although 0.5 is not. When you try to store a decimal as an integer, the computer will truncate the remainder, removing everything following the decimal.
+
+
+
+
+
+TAKING ACTION WITH OPERATORS
+
+
+
+In a broad sense, an operator is any symbol or double symbol that causes the compiler to do an action, such as =, and in certain situations, even phrases like sizeof(). Operators are used in the operations of addition, subtracting, multiplying, and dividing. If you instruct a computer to add two integers, it will do so. For example, you use the addition operator (+), which makes sense. We're all aware that 2 + 2 equals 4. In C++, here's how you can achieve the same thing:
+
+cout << 2 + 2;
+
+This line displays four onscreen.
+
+These four fundamental operators are self-explanatory; they accomplish exactly what you'd expect them to do but take a moment to review the symbol for each one:
+
+Addition +
+
+Subtraction –
+
+Multiplication *
+
+Division /
+
+Not all of these operators work in the same direction as they do in math. The addition and subtraction operators execute before the multiplication and division operators; for example, 1+3*2 3 * 2 is executed first, then one is added, resulting in the number 7.
+
+Parentheses have the highest order of precedence. This means that formulas contained within parentheses are calculated first. If you add parenthesis to the above formula, as shown here, (1+3)*2 + 3 executes first, resulting in 4 multiplied by 2, resulting in 8.
+
+
+
+Add a slew of parentheses to your sentence. Debugging becomes significantly more accessible as a result of this. The following is a general rule of thumb: Put parenthesis in your formula if you think it needs them. This approach will make your code simple to read and comprehend.
+
+
+
+
+
+THE MODULUS OPERATOR
+
+
+
+Remember in sixth grade when you were doing long division, and your answers were always total numbers? Because you couldn't handle decimals yet, you started working with remainders. Knowing the remainder of a number when it is split is sometimes extremely useful. The modulus operator is used to obtain this information ( percent ). The residual of x divided by y is the modulus operator of x and y. You write the code like this to find the remaining of 5 divided by 2:
+
+2 percent 5 percent
+
+This line returns one. Another simple example follows. Consider the following scenario: five pirates and sixteen shining gold coins. The pirates must decide if the treasure can be distributed equally among them or if they will have to engage in a large, drunken brawl, which brings us to the next game. (Though they'll probably end up in a drunken brawl anyhow.)
+
+
+
+
+
+Chapter 3
+
+
+
+MAKING CHOICES WITH CONTROL STATEMENTS
+
+
+
+In earlier chapters, you created programs that execute from start to finish. Each statement is executed only once, and every word must be completed. However, this linearity is acceptable only for basic programming.
+
+To create advanced, dynamic programs, you must master using control statements, enabling programs to jump to a particular piece of code or execute a section of code more than once. This chapter covers the following topics:
+
+Selection statements
+
+Boolean logic and operators
+
+Iteration statements
+
+Branching statements
+
+Random numbers
+
+
+
+
+
+CHOOSING CODE WITH SELECTION STATEMENTS
+
+
+
+People frequently make decisions based on certain circumstances. If a person is sick, for example, he may visit a doctor. Whether or not to go to the doctor is based on a particular condition: judging sick. The same is true when using programs. You can design your schedule so that it selects which code to execute based on certain conditions.
+
+Boolean values are used to define conditions in C++. Booleans, as you know, have two possible values: true or false. The relevance of a condition is determined by the operators and operands that make up the condition.
+
+If-else statements and switch statements are the two forms of selection statements.
+
+Testing Conditions with if Statements
+
+The if statement is probably the most crucial selection statement. The if statement's concept is that a specific line of code (called the controlled statement) will be executed only if a specified condition (called the controlling condition, or simply the condition) is accurate. The if statement has the following general syntax: if (condition)
+
+controlled statements
+
+Here, the condition is tested, and the controlled statement is zero or more con-trolled statements. These controlled statements are executed only if the condition evaluates to true. There is no semicolon following the condition. Because the entire two lines of this broad syntax represent one sentence, there is no need for a semicolon. Also, the condition is enclosed in parenthesis to distinguish it from the rest of the sentence. These parentheses are required. If controlled statements consist of only one statement, the syntax is this:
+
+if (condition)
+
+theStatement;
+
+The statement, in this case, is a single statement. The semicolon at the end indicates that this is entire if statement to the compiler. When controlled statements consist of more than one statement, the syntax looks like this:
+
+if (condition)
+
+{
+
+statementList
+
+}
+
+The statement list consists of zero or more C++ statements, each terminated by a semicolon.
+
+{
+
+
+
+cout "The sword's number is fewer than eight";
+
+
+
+}
+
+Because the condition (controlling condition), swords 8 (is the value of the integer variable swords less than 8? ), evaluated to false, the cout command will never be performed. The number nine is the same as the number eight. You can also present this example—without the braces, as shown here—because you simply want it to execute one line of code:
+
+int swords = 9; int swords = 9; if(swords 8)/the condition; int swords= 9; {
+
+statement list
+
+}
+
+In the preceding, the statement list consists of zero or more statements, separated by semicolons.
+
+A block isn't required if the controlled statements are just one statement: See Figure 3.1 for a diagram showing how the if-else if-else structure works.
+
+
+
+The Conditional Operator
+
+Some conditions are very trivial, making it very tedious to write a complete if statement for them. Observe the following:
+
+z=y if (x > y) / is x higher than y?
+
+The most significant number is ten.
+
+5 is the smallest value.
+
+Using the switch Statement
+
+The switch statement is the second sort of selection statement. case expr2:
+
+controlledStatements2
+
+break;
+
+case expr3:
+
+controlledStatements3
+
+break;
+
+…
+
+}
+
+Expression, expr1, expr2, and expr3 are variables or expressions whose values you want to verify. When you compile, you get a syntax error. The break keyword is not required in this case. You'll soon learn what happens if you leave this word out, but for now, put it after every sentence.
+
+Now that you've gotten through all of the jargon, let's look at an example:
+
+menu choice = 3; int menu choice = 3; int menu choice = 3;
+
+
+
+if(menuChoice) if(menuChoice) if(menuChoice)
+
+
+
+Example 1:
+
+
+
+cout “You chose one!”n
+
+break;
+
+case 2:
+
+cout << “You chose 2!\n”;
+
+break;
+
+case 3:
+
+cout << “You chose 3!\n”;
+
+break;
+
+case 4:
+
+cout << “You chose 4!\n”;
+
+break; out "You've reached the end of the switch statement! n";
+
+cout << “\n”;
+
+switch (choice)
+
+{
+
+case 1:
+
+case 2:
+
+case 3:
+
+cout << “You chose 1, 2, or 3.\n”;
+
+break;
+
+case 4:
+
+cout << “You chose 4!\n”;
+
+case 5:
+
+cout << “You chose 4 or 5.\n”;
+
+break;
+
+}
+
+Output (when the user enters 1):
+
+Please enter a number: 1
+
+You chose 1, 2, or 3.
+
+Output (when the user enters 4):
+
+Please enter a number: 4
+
+You chose 4!
+
+You chose 4 or 5.
+
+The Less-Than and Greater-Than Operators
+
+Less-than() and greater-than(>) indicators perform the same function in computers as they do in fourth-grade math.
+
+
+
+
+
+Merging with the Equivalence Operator
+
+
+
+You might also recall the experience with the less-than-or-equal-to and the greater-than-or-equal-to signs in math. In C++, they are written slightly differently, but they still exist. Instead of a line under the less-than or greater-than sign, you put an equal sign after it. Thus, the greater-than-or-equal-to operator is >=, and the less-than-or-equal-to operator is <=.
+
+These operators work exactly as the less-than and greater-than operators work, except that the operator also returns true if the two things being compared are equal. Here are some examples:
+
+if (5 <= 5) //true
+
+if (6 >= 7) //false
+
+if (1 <= 8) //true
+
+
+
+
+
+The while Loop
+
+
+
+The while loop could be used to program the Hercules example. The while loop will run indefinitely until a specific condition is met. A while loop has the following syntax:
+
+while(condition)
+
+controlled statements
+
+Every time the loop runs, the condition will be tested. The loop will end when the condition is no longer valid. ControlledStatements will be executed repeatedly until then. Remember that the loop may never execute if the condition isn't valid, to begin with. Keep in mind that you must ensure that your loops end after a specified amount of time has passed. Avoid cycles that never end (loops that will never fail their precondition).
+
+You're now ready to program Hercules' nine duties (mentioned in the preceding section). The while loop is used in the following example to generate the program. You want the while loop to be limited to a specific condition; the task number must be less than or equal to nine.
+
+//3.2 - Nine Tasks of Hercules - Dirk Henkemans and Mark Lee #include <iostream>
+
+int main( void )
+
+{
+
+using std::cout;
+
+/this is the variable that keeps track of how many tasks you've accomplished.
+
+taskNumber = 0; int taskNumber = 0; int taskNumber = 0
+
+while(taskNumber < 9) //until taskNumber >= 9 {
+
+taskNumber++;
+
+cout << ”Hercules has now completed “
+
+<< taskNumber << “ tasks.” << “\n”;
+
+}
+
+return 0;
+
+}
+
+Output:
+
+Hercules has now completed 1 task.
+
+Hercules has now completed two tasks.
+
+Hercules has now completed three tasks.
+
+Hercules has now completed four tasks.
+
+Hercules has now completed five tasks.
+
+Hercules has now completed six tasks.
+
+Hercules has now completed seven tasks.
+
+Hercules has now completed eight tasks.
+
+Hercules has now completed nine tasks.
+
+Notice that the final value for task number is 10, not 9. This is because the task number must become 10 to make the condition false. Also, notice that the task number is incremented every time through the loop. This keeps track of Hercules' tasks and guarantees that the loop will eventually terminate. See Figure 3.2 for a diagram of how the while statement works.
+
+
+
+
+
+Using the for Statement
+
+
+
+One of the most valuable statements you'll come across is the for statement. The loop is kept going by the for statement, which is an iteration statement. The following is the syntax for the for statement: for (condition; expression; initialization)
+
+controlled statements
+
+Any valid variable can be used as an initialization.
+
+for(int count = 0; count < 10; count++)
+
+{
+
+cout << count << “ “;
+
+}
+
+Output:
+
+0123456789
+
+On the screen, the digits 0 to 9 are displayed.
+
+int index = 0;
+
+for (; index < 10; index++) //third form
+
+cout << index << “ “;
+
+cout << “\n”;
+
+Output:
+
+0123456789
+
+0123456789
+
+0123456789
+
+This example also illustrates another issue. It's worth noting that the count is declared twice. Doing a task a particular number of times is the most typical way to employ a statement.
+
+
+
+
+
+The while Loop
+
+
+
+You could program the Hercules example with the while loop. The while loop will continually execute until a particular condition becomes false. The syntax for a while loop is as follows:
+
+while(condition)
+
+controlled statements
+
+Every time the loop runs, the condition will be tested. When the condition is no longer valid, the loop will terminate. Until then, controlledStatements will be executed over and over again. Remember, if the condition is not proper to begin with, the loop may never run. Keep in mind that you must ensure that your loops end after a specified amount of time has passed. Avoid cycles that never end (loops that will never fail their precondition).
+
+You're now ready to program Hercules' nine duties (mentioned in the preceding section). The while loop is used in the following example to generate the program. You want the while loop to be limited to a specific condition; the task number must be less than or equal to nine.
+
+//3.2 - Nine Tasks of Hercules - Dirk Henkemans and Mark Lee #include <iostream>
+
+int main( void )
+
+{
+
+using std::cout;
+
+/this is the variable that keeps track of how many tasks you've accomplished.
+
+while(taskNumber 9) /until taskNumber >= 9; int taskNumber = 0; int taskNumber = 0; int taskNumber = 0; int taskNumber = 0; int taskNumber = 0; int task
+
+
+
+taskNumber++;
+
+
+
+cout ”Hercules has finally finished.”
+
+
+
+task number " tasks." "n";
+
+
+
+}return 0;
+
+}
+
+Output:
+
+Hercules has now completed one task.
+
+Hercules has now completed two tasks.
+
+Hercules has now completed three tasks.
+
+Hercules has now completed four tasks.
+
+Hercules has now completed five tasks.
+
+Hercules has now completed six tasks.
+
+Hercules has now completed seven tasks.
+
+Hercules has now completed eight tasks.
+
+Hercules has now completed nine tasks.
+
+Notice that the final value for task number is 10, not 9. This is because the task number must become 10 to make the condition false. Also, notice that the task number is incremented every time through the loop. This keeps track of Hercules' tasks and guarantees that the loop will eventually terminate. See Figure 3.2 for a diagram of how the while statement works.
+
+
+
+
+
+Looping with the do-while Loop
+
+
+
+The do-while loop is like the while loop, except that the condition is tested after the iteration is finished. In this way, The loop will run at least once every time.
+
+The following is the syntax for a do while loop:
+
+do {
+
+controlledStatements
+
+} while(condition);
+
+Remember to add the semicolon after the condition (this is easy to forget). A do-while loop will execute until its condition evaluates to false, just like a while loop does. However, a do-while loop will execute once and then test the condition, so no matter what, a do-while loop will execute once.
+
+When programming a gaming menu, as demonstrated next, the do-while loop is a great example. You want to show the menu in the loop before asking for input from the user. If the user does not provide the correct information, the menu will be presented again until the user provides the correct information. If your menu options are numbered 1–4, for example, you'll want to loop until the user input is between 0 and 5. (a valid menu number). The loop will end as soon as the user enters valid data.
+
+//3.4 - A Simple Menu - Dirk Henkemans
+
+#include<iostream>
+
+int main(void)
+
+{
+
+using std::cout;
+
+using std::cin;
+
+cout<<”Your party is adventuring “
+
+"through hills outside of Que'll \n" <<" when suddenly you are "
+
+"ambushed by rogues!!! \n \n”;
+
+
+
+do int response = 0; int response = 0; int response = 0; int response =
+
+
+
+Cout “Would you like to take any action?n” “ 1) Attack the evil rogues!!! \n”
+
+“ 2) Run from the onslaught \n.”
+
+“ 3) Try to talk to the rogues \n”; in >> response;
+
+}
+
+while (response < 1 || response > 3);
+
+if (response == 1)
+
+{
+
+cout << "The battle drags into the night. "
+
+"and by sunset, no one knows \n."
+
+"who is still alive!\n";
+
+}
+
+else if (response == 2)
+
+{
+
+cout << "You run from the rogues into "
+
+<< "the trees never to see them again.\n";
+
+}
+
+else
+
+{
+
+cout <<" You try talking to them "
+
+"but they seem unlikely to listen. \n"
+
+" They take all your money. "
+
+"and depart happily and you poor.\n ";
+
+}
+
+0; 0; 0; 0; 0; 0;
+
+This application gives a brief introduction before allowing the user to select one of three options from a menu. If the user makes an incorrect option, the program is displayed again, and the process repeats until the user makes the correct choice. Each option on the menu has a different ending.
+
+Menus are the foundation for practically all text-based applications and provide a user-friendly interface. In Chapter 4, "Writing Functions," you learn how to create a general menu for a text adventure game that can be used continuously.
+
+
+
+
+
+CHAPTER 4
+
+
+
+General Features of C++
+
+
+
+This chapter shows you how to write, compile, and run a simple C++ program.
+
+
+
+
+
+The main function
+
+
+
+Each C++ application (complete code) has the primary function first loaded into memory and then transferred to the CPU for execution. When execution has been concluded, the primary integer zero is returned by the function. Backward compatibility is one of the reasons for this strategy.
+
+The following is the general syntax for the main function:
+
+int main()
+
+{
+
+...
+
+return 0;
+
+}
+
+Where int denotes that an integer will be returned after the task is completed. This integer is set to 0 on the penultimate line indicating that the execution was successful.
+
+The parentheses after primary encapsulate the main function's arguments; there are none in this case.
+
+The curly brackets indicate the start and finish of the enclosing main program, which contains several instructions.
+
+The dots represent additional lines of code.
+
+The semicolon serves as a delimiter, indicating that the preceding command returns 0, ending the execution.
+
+central is a simplified version of the main program that returns nothing when run ()
+
+{
+
+
+
+...
+
+
+
+}
+
+
+
+However, the preceding approach, which includes a return statement, is highly encouraged as a best practice.
+
+
+
+We'll learn in Chapter 5 how the primary function can send and receive data from the operating system. In that scenario, parentheses' parentheses in the parentheses in the parenthesis in the int main() will enclose command line arguments.
+
+
+
+
+
+Problem
+
+
+
+Parentheses and curly brackets are used in C++. Using the symbols on your keyboard as a guide, what other bracket delimiters do you expect?
+
+
+
+
+
+Chapter 5
+
+
+
+Programming in C++
+
+
+
+Now that we've covered the overall structure of a C++ program, we'll go through the leading operators, instructions, and logical constructions. The majority of these are the same as or comparable to those found in other languages. C++, on the other hand, supports some unusual and occasionally weird operations with which you should become acquainted.
+
+In Appendix C, you'll find correspondence is made between Matlab, Fortran 77, and C++ in the form of a dictionary that explains how to translate corresponding code.
+
+
+
+
+
+Operators
+
+
+
+To perform mathematical and logical operations, operators apply to one variable or a set of variables.
+
+
+
+
+
+Assignation
+
+
+
+The assignation or right-to-left copy operator is represented by the equal sign (=). As a result, the assertion
+
+The expression a = b implies "replace the value of a with the value of b," and
+
+a = a+5 says, "Replace the value of a with itself augmented by 5."
+
+Its absence of reciprocity distinguishes the assignation operator: the statement a=b differs from the statement b=a.
+
+
+
+
+
+Arithmetic operators
+
+
+
+The basic implementation of C++ supports the following arithmetic operators
+
+• Addition(+): We can write c=a+b; Introduction to C++ Programming and Graphics
+
+Compound assignationTable is a list of other unusual statements mediated by compound assignation operators.
+
+Operation Meaning
+
+a +=b; a=a+b;
+
+a -=b; a=a-b;
+
+a *=b; a=a*b;
+
+a /=b; a=a/b;
+
+a *= b+c; a=a*(b+c);
+
+a++; a=a+1;
+
+++a; a=a+1;
+
+a--; a=a-1;
+
+--a; a=a-1;
+
+
+
+In C++, unconventional statements are made possible through compound assignation operators.
+
+
+
+
+
+Relational and logical operands
+
+
+
+Table 3.1.2 lists the relational and logical operands. To find the maximum of numbers a and b, for example.
+
+maximum = (a>b)? a : b; a : b; a : b;
+
+The variable max will be set equal to an if a > b is true; if a > b is false, the variable max will be set equal to b.
+
+Introduction to C++ Programming and Graphics
+
+
+
+Equal to a == b
+
+Not equal to a != b
+
+Less than a<b
+
+Less than or equal to a<=b
+
+Greater than a>b
+
+Greater than or equal to a>=b
+
+And A&&B
+
+Or A||B
+
+Boolean opposite or true or false !A
+
+Conditional operator A ? a: b;
+
+Table In C++, a, b are variables, and A, B are expressions; a, b are variables, and A, B are expressions.
+
+
+
+
+
+Initialization of vectors and matrices
+
+
+
+Declaration and initialization must be made in a single line. We may not first declare and then initialize a vector.
+
+Similarly, we can write
+
+char u[3]= {78, 34, 78};
+
+char e[10]= {’a’, ’b’, ’c’};
+
+Introduction to Graphics and C++ Programming
+
+
+
+
+
+Chapter 6
+
+
+
+C Language Comparisons
+
+
+
+In general, a program executes statements in the order they occur in the source code, one line at a time. Changing that sequence disrupts the flow of the program. If, which is comparable to its human language equivalent, also named if, is one of the most common flow control words in the C language. The if the keyword is introduced in this chapter. You'll also learn how to make comparisons in the C programming language and deal with various decisions.
+
+
+
+
+
+If Statements
+
+
+
+You must first grasp how comparisons operate in C before you can use the if keyword. Two values or expressions are compared and contrasted. You utilize one of the comparison operators in the C language to make that assessment. The most frequent comparison operators are as follows:
+
+•
+
+• == “Is equal to”
+
+• > “Greater than”
+
+• < “Lesser than”
+
+• <= “Less than or equal to”
+
+• >= “Greater than or equal to”
+
+• != “Does not equal.”
+
+Take a look at the code below:
+
+1 #include <stdio.h>
+
+2
+
+3 int main();
+
+4 {
+
+5 int a;
+
+6
+
+7 print (“Type an integer: “);
+
+8 scanf(“%d”,&a);
+
+9 printf(“You typed %d.\n”,a);
+
+10 if(a > 10)
+
+11 printf(“percentage d is larger than ten percent”,a);
+
+12 printf(“percentage d is larger than ten percent”,a); printf(“percentage d is larger than ten percent”,a);
+
+13 return(0);
+
+14 }
+
+15
+
+The user is asked to provide a positive integer value. The value is shown on line 9. An if statement evaluates that value at line 10. Line 11 is run if the value is more significant than 10. Line 11 is skipped if not. Now you may compile and run this code.
+
+Any integer value can be entered. We'll type 50 for the sake of this illustration. It worked, as you can see. The print command from line 11 is displayed in the output. Now type a number that is less than ten. The program ends, and line 11 is ignored, as you can see.
+
+Traditionally, an if statement is formatted differently from other statements. It is divided into two or more lines. The if the condition is set in parenthesis in the first line. If the condition is proper, the following line is executed. It's just one statement spread across two lines. Notice how the semi-colon appears at the end of line 11 rather than at the beginning of line 10.
+
+It's also possible to write it in a single line, but this is uncommon. Curly brackets are used to enclose the statements about it, as shown here:
+
+1 #include <stdio.h>
+
+2
+
+3 int main();
+
+4 {
+
+5 int a;
+
+6
+
+7 print (“Type an integer: “);
+
+8 scanf(“%d”,&a);
+
+9 printf(“You typed %d.\n”,a);
+
+10 if(a > 10)
+
+11 {
+
+12 printf(“percentage d is larger than ten percent”,a);
+
+13 }
+
+14
+
+15 return(0);
+
+16 }
+
+17
+
+When more than one sentence is performed based on the if condition, this format is required. Let's shift line 9 of the code to line 12 as an example. The code should be saved, built, and run.
+
+1 #include <stdio.h>
+
+2
+
+3 int main();
+
+4 {
+
+5 int a;
+
+6
+
+7 printf(“Type an integer: “);
+
+8 scanf(“%d”,&a);
+
+9 if(a > 10)
+
+
+
+10 {
+
+11 printf(“You typed %d.\n”,a);
+
+12 printf(“percentage d is larger than ten percent”,a);
+
+13 }
+
+14
+
+15 return(0);
+
+16 }
+
+17
+
+
+
+Type in the number 25, for example. Now since the number is greater than 10, both lines are displayed. Take a look at the code below:
+
+
+
+1 #include <stdio.h>
+
+2
+
+3 int main();
+
+4 {
+
+5 int a;
+
+6
+
+7 print (“Type an integer: “);
+
+8 scanf(“%d”,&a);
+
+9 printf(“You typed %d.\n”,a);
+
+10 if(a > 10)
+
+11 {
+
+12 printf(“percentage d is larger than ten percent”,a);
+
+13 }
+
+14 if(a < 10)
+
+15 {
+
+16 printf(“%d is lesser than 10.\n”,a);
+
+17 }
+
+18
+
+19 return(0);
+
+20 }
+
+This code displays two if statements in a row. They each have their own set of curly brackets. Two conditions must be met: larger than line 10 and less than line 14. Would you please make a copy of the code and execute it?
+
+After running the code, you can see that the appropriate output is displayed for values less than or more than 10. However, you will not see the appropriate output if you write ten directly.
+
+Make a change to line 14 so that the operator is “less than or equal to.” Line 16 should be edited to reflect the same findings, as follows:
+
+#include <stdio.h>
+
+int main();
+
+
+
+{
+
+
+
+5 int a;
+
+6
+
+7 printf(“Type an integer: “);
+
+8 scanf(“%d”,&a);
+
+9 printf(“You typed %d.\n”,a);
+
+10 if(a > 10)
+
+11 {
+
+12 printf(“percentage d is larger than ten percent”,a);
+
+13 }
+
+14 if(a <= 10)
+
+15 {
+
+16 printf(“%d is lesser than or equal to 10.\n”,a);
+
+17 }
+
+18
+
+19 return(0);
+
+20 }
+
+Save, build, and run the code.
+
+
+
+
+
+Else Statements
+
+
+
+The term else can also be used to handle an either-or decision. Take a look at the following code:
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 int a;
+
+6
+
+7 print (“Type an integer: “);
+
+8 scanf(“%d”, &a);
+
+9 printf(“You otyped %d.\n”,a);
+
+10 if(a > 10)
+
+11 {
+
+12 prprintf(“percentage d is larger than ten percent”,a);intf(“%d is greater than 10.\n”,a);
+
+13 }
+
+14 else
+
+15 {
+
+16 printf(“percentage d is larger than ten percent”,a);
+
+17 }
+
+18
+
+19 return(0);
+
+20 }
+
+21
+
+The else keyword is used in this code, which is a rewriting of our prior code. Line 10's if condition performs an evaluation. When the condition is actual, its statements are executed. If the condition is false, the statements from else will be executed instead. Create and run this program.
+
+Other than that, there isn't a semi-colon. Curly brackets are used instead. Because only one sentence follows, all might be written without brackets.
+
+
+
+
+
+Else if Statements
+
+
+
+When three or more conditions are present, an else if the structure can be used to examine them. Take a look at the following code:
+
+
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 int a;
+
+6
+
+7 printf(“Type an integer: “);
+
+8 scanf(“%d”, &a);
+
+9 printf(“You otyped %d.\n”,a);
+
+10 if(a > 10)
+
+11 {
+
+12 printf("percentage d is larger than ten",a); printf("percentage d is larger than ten",a);
+
+13 }
+
+14 else if(a < 10)
+
+15 { printf(“percent d is less than or equal to 10.n”,a); printf(“percent d is less than or equal to 10.n”,a); printf(“percent
+
+16 printf(“%d is less than or equal to 10.\n”,a);
+
+17 }
+
+18 else
+
+19 {
+
+20 printf(“%d is 10.\n”,a);
+
+21 }
+
+22 return(0);
+
+23 }
+
+24
+
+Line 10 of this structure begins with an if statement. When that condition is proper, only the statements that belong to that condition are run, while the others are skipped. Otherwise, at line 14, a second condition—else if—is checked. If that condition is proper, the statements in that condition are performed while the remainder is skipped. At
+
+The structure's conclusion is a separate entity. When the initial conditions aren't met, its statements are executed. Create and run this program.
+
+The end outcome is similar to what was shown in the prior cases. Unless a value of 10 is typed, the print statement under the else statement is executed. You can stack as many other if statements as you want, which aids in evaluating difficult circumstances.
+
+A friendly reminder: the if, else, if, and else keywords are rarely followed by a semi-colon. A semi-colon is a statement in the C programming language. The compiler assumes that the semi-colon is the statement and that nothing follows it when one stays after an if evaluation. This is a common blunder made by inexperienced programmers. Take a look at the following code:
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 int a = -5;
+
+6
+
+7 if(a > 0);
+
+8 printf(“%d is a positive number.\n”,a);
+
+9
+
+10 return(0);
+
+11 }
+
+12
+
+13
+
+Construct and run. Negative 5 is not a positive number. If you're using the Clong compiler, you may review a specific error message by going to the Build log tab. Other compilers aren't quite as clever. Simply remove the lingering semi-colon at the end of line 7 to solve the problem. The code should be saved, built, and run.
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 int a = -5;
+
+6
+
+7 if(a > 0)
+
+8 printf(“%d is a positive number.\n”,a);
+
+9
+
+10 return(0);
+
+11 }
+
+12
+
+13
+
+
+
+Negative 5 violates the condition if there is no output. Remember that the semi-colon comes after the sentence, not after the if condition's parenthesis.
+
+
+
+
+
+Switch/Else Statements
+
+
+
+By stacking a set of if/else conditions in the C language, you can handle complex judgments. That structure might be pretty unsightly at times. You can also use the switch/case structure, another decision-making tool in the C programming language.
+
+The switch/case structure will be discussed in this section. You'll see how it's built, how it handles numerous decisions, and we'll go over a few tips. Take a look at the following code:
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 char a;
+
+6
+
+7 printf(“Your choice (1,2,3): “);
+
+8 scanf(“%c”, &a);
+
+9
+
+10 switch(a)
+
+11 {
+
+12 case ‘1’:
+
+13 puts(“Excellent choice!”);
+
+14 break;
+
+15 case ‘2’:
+
+16 puts(“This is the most common choice: “);
+
+17 break;
+
+18 case ‘3’:
+
+19 puts(“I questions your judgement.”);
+
+20 break;
+
+21 default:
+
+22 puts(“That’s not a valid choice.”);
+
+23 }
+
+24
+
+25 return(0);
+
+26 }
+
+27
+
+28
+
+A switch/case structure makes up the majority of this code. It begins on line 10 with a switch. Then comes a succession of case statements, each with its own set of statements. The default is the final piece. It is followed by its assertions and a curly bracket at the end. The switch/case structure is made up of the following components.
+
+The break keyword is also used in the switch/case structure. Overall, there are four C language keywords in this structure: switch, case, default, and break. To see what the code does, build and run it. Run it a few times to experiment with different options. Although the code allows character input, it could simply accept integers.
+
+The following is how it works: Switch deals with a single value rather than a comparison. It can be a mathematical formula, but the outcome must be a single number. Switch specifies a value, which is then compared to the case statements' values. If the comparison is correct, the statements in the case statement set to true are executed. If they aren't, they will be skipped.
+
+
+
+If character one is typed at line 12, the puts statement at line 13 is run. The switch case evaluation comes to a finish at line 14, with control returning to the line after the switch structure's last curly bracket, which is at line 23. If no match is found, execution moves on to the following case statement, then the next, and so on.
+
+Finally, if none of the case circumstances match, the default condition is used. Because it is the end of the structure, there is no need for a break statement. Remove all break statements from the code by commenting them out. Lines 14, 17, and 20 should all have double slashes.
+
+
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 char a;
+
+6
+
+7 printf(“Your choice (1,2,3): “);
+
+8 scanf(“%c”, &a);
+
+9
+
+10 switch(a)
+
+11 {
+
+12 case ‘1’:
+
+13 puts(“Excellent choice!”);
+
+14// break;
+
+15 case ‘2’:
+
+16 puts(“This is the most common choice: “);
+
+17// break;
+
+18 case ‘3’:
+
+19 puts(“I questions your judgement.”);
+
+20// break;
+
+21 default:
+
+22 puts(“That’s not a valid choice.”);
+
+
+
+23 }
+
+24
+
+25 return(0);
+
+26 }
+
+27
+
+28
+
+After you've saved your changes, build and run the code. If you write anything other than 1, 2, or 3, you'll get an invalid choice notice. However, if you write a ‘1', all of the messages will be displayed. Because execution passes via each case statement, this is the case. Take a look at the following code:
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 char a;
+
+6
+
+7 puts(“Vacation options: “);
+
+8 puts(“A – Airfare”);
+
+9 puts(“B – Hotel”);
+
+10 puts(“C – Rental Car”);
+
+11 scanf(“%c”, &a);
+
+12
+
+13 switch(a)
+
+14 {
+
+15 case ‘A’:
+
+16 puts(“You have selected the airfare”);
+
+17 break;
+
+18 case ‘B’:
+
+19 puts(“You have selected Hotel”);
+
+20 break;
+
+21 case ‘C’:
+
+22 puts(“You have selected Rental Car”);
+
+23 break;
+
+24 default:
+
+25 puts(“That is an invalid choice”);
+
+26 }
+
+27
+
+28 return(0);
+
+29
+
+30 }
+
+31
+
+32
+
+Another switch/case structure that assesses input like a menu system is shown below. Make a copy of the code and execute it. The issue with these options is that you might have entered a small ‘a' rather than a large ‘A.' In that case,
+
+In this scenario, the application does not appear to work correctly. Adjust the case statements to account for both upper and lowercase input to solve the problem.
+
+Add duplicate case declarations for the lower case letters to the source code as follows:
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 char a;
+
+6
+
+7 puts(“Vacation options: “);
+
+8 puts(“A – Airfare”);
+
+9 puts(“B – Hotel”);
+
+10 puts(“C – Rental Car”);
+
+11 scanf(“%c”, &a);
+
+12
+
+13 switch(a)
+
+14 {
+
+15 case ‘A’:
+
+16 puts(“You have selected the airfare”);
+
+17 break;
+
+18 case ‘a’:
+
+19 puts(“You have selected the airfare”);
+
+20 break;
+
+21 case ‘B’:
+
+22 puts(“You have selected Hotel”);
+
+23 break;
+
+24 case ‘b’:
+
+25 puts(“You have selected Hotel”);
+
+26 break;
+
+27 case ‘C’:
+
+28 puts(“You have selected Rental Car”);
+
+29 break;
+
+30 case ‘c’:
+
+31 puts(“You have selected Rental Car”);
+
+32 break;
+
+33 default:
+
+34 puts(“That is an invalid choice”)
+
+35 }
+
+36
+
+37 return(0);
+
+38 }
+
+39
+
+40
+
+Save your modifications before building and running the code. Both upper and lower case letters should now pass the inspection. As you can see, the total number of lines of code has climbed dramatically. Here's another method to construct the code that accepts both upper and lower case letters while also reducing the number of lines.
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 char a;
+
+6
+
+7 puts(“Vacation options: “);
+
+8 puts(“A – Airfare”);
+
+9 puts(“B – Hotel”);
+
+10 puts(“C – Rental Car”);
+
+11 scanf(“%c”, &a);
+
+12
+
+13 switch(a)
+
+14 {
+
+15 case ‘A’:
+
+16 case ‘a’:
+
+17 puts(“You have selected the airfare”);
+
+18 break;
+
+19 case ‘B’:
+
+20 case ‘b’:
+
+21 puts(“You have selected Hotel”);
+
+22 break;
+
+23 case ‘C’:
+
+24 case ‘c’:
+
+25 puts(“You have selected Rental Car”);
+
+26 break;
+
+27 default:
+
+28 puts(“That is an invalid choice”);
+
+29 }
+
+30
+
+31 return(0);
+
+32 }
+
+33
+
+34
+
+
+
+
+
+You can also use C language functions to modify the cast of characters to fix this problem. Another chapter deals with this subject. When one or more statements are repeated over and over, the program flow can be disrupted. A loop is a term for this process.
+
+
+
+
+
+The While Loop
+
+
+
+Looping is possible in C in a variety of ways. The while loop will be discussed in this section. You'll discover how to set up a loop, determine when to stop looping, and break out of a loop before it's completed.
+
+A loop is a method of controlling software execution that repeats itself. A condition that causes the loop to repeat, a set of repeat statements, and a means for the loop to terminate must all be specified. A while loop counts from 1 to 10 in the code below.
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 int x;
+
+6
+
+7 x = 1;
+
+8 while(x <= 10)
+
+9 {
+
+10 printf(“%d\n”,x);
+
+11 x++;
+
+12 }
+
+13
+
+14 return(o);
+
+15 }
+
+16
+
+17
+
+Line 8 specifies the looping condition. It says that the statements in the loop between the curly brackets at lines 9 and 12 will recur as long as the value of variable x is less than or equal to 10—as long as that condition is proper. In line 7, the value of x is set to zero.
+
+The value of variable x is incremented at line 11. The loop repeats till x is more significant than ten as long as x is increasing. When you compile and run the code, the values 1 through 10 will be displayed.
+
+
+
+Let's pretend you wanted to count to 20. Can you envision where you'll have to make that modification in the source code? It's straightforward: Instead of 10, change the condition in the while loop to 20. Save your modifications before building and running the code.
+
+#include <stdio.h>
+
+int main()
+
+{
+
+int x;
+
+7 x = 1;
+
+8 while(x <= 20)
+
+9 {
+
+10 printf(“%d\n”,x);
+
+11 x++;
+
+12 }
+
+13
+
+14 return(o);
+
+15 }
+
+16
+
+17
+
+The values 1 through 20 are now visible. Assume that instead of starting with 1, you only wanted to show the even numbers from 2 to 20. This necessitates a little more thought because it alters two things: the initialization and how variable x grows in value.
+
+The first change is at line 7, where the variable x is set to 2. Start at two if you're going to be counting in 2s. Then change line 11 so that the value of x is incremented by 2, which is a mathematical function rather than an increment. The value of x + 2 is x.
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 int x;
+
+6
+
+7 x = 2;
+
+8 while(x <= 20)
+
+9 {
+
+10 printf(“%d\n”,x);
+
+11 x = x + 2;
+
+12 }
+
+13
+
+14 return(o);
+
+15 }
+
+16
+
+17
+
+
+
+Save, compile, and execute the code. Even numbers between 2 and 20 can be found there. Loops can also be used to count backward. Can you imagine how you'd change the code to allow this to happen if you count backward from ten to one? Some adjustments would be required.
+
+If you want to start with a value of ten, modify the initial value to ten. The condition must then be changed as well because the loop would otherwise not recur. At the same time, x is more significant than should be the condition zero. Then, at line 11, the statement must be updated as well. Each time the loop spins, the value of x should be decremented.
+
+#include <stdio.h>
+
+int main()
+
+{
+
+int x;
+
+7 x = 10;
+
+8 while(x > 0)
+
+9 {
+
+10 printf(“%d\n”,x);
+
+11 x --;
+
+12 }
+
+13
+
+14 return(o);
+
+15 }
+
+16
+
+17
+
+Save, compile, and execute the code. The loop there counts down from ten to one. Take a look at the following code:
+
+1 #include <stdio.h>
+
+2 #include <stdlib.h>
+
+3 #include <time.h>
+
+4
+
+5 int main()
+
+6 {
+
+7 int x, r;
+
+8
+
+9 srand((unsigned)time(NULL)); /*Seed randomizer */
+
+10
+
+11 x = 10;
+
+12 while(x > 0)
+
+13 {
+
+14 r = rand();
+
+15 printf(“%d\n”, r);
+
+16 x--;
+
+17 }
+
+18
+
+19 return(0);
+
+20
+
+21 }
+
+22
+
+23
+
+The srand and rand functions from the previous chapter are used in this code. Random numbers are generated using these functions. A while loop is used to display ten random numbers in this scenario. Make a copy of the code and execute it. Let's look at a few strategies for cleaning up the data.
+
+The modulus operator, which is represented by a percent sign, is the first. Like leftovers, modulus calculates the remainder of a value. Take a look at the example code below to see what I mean:
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 int a, b;
+
+6
+
+7 a = 7;
+
+8 while(a < 30)
+
+9 {
+
+10 b = a % 7; /* b equals a mode 7 */
+
+11 printf(“%d %% 7 = %d\n”,a,b);
+
+12 a++;
+
+13 }
+
+14 return(0);
+
+15 }
+
+16
+
+17
+
+To teach you C, we're going to utilize a C program. The while loop alternates between the values 7 and 30. It demonstrates how each of those numbers is affected by the modulus operator. Make a copy of the code and execute it.
+
+You get a remnant when you use the modulus operator. As an example, ten percent seven equals three. This is since seven divides into ten just once, but with three remainders. Regardless of the original number, you can see how the value for mod seven will always be between 0 and 6.
+
+Change the value of line 15 in the code below so that the printf function displays the value of r percent 100.
+
+1 #include <stdio.h>
+
+2 #include <stdlib.h>
+
+3 #include <time.h>
+
+4
+
+5 int main()
+
+6 {
+
+7 int x, r;
+
+8
+
+9 srand((unsigned)time(NULL)); /*Seed randomizer */
+
+10
+
+
+
+11 x = 10;
+
+12 while(x > 0)
+
+13 {
+
+14 r = rand();
+
+15 printf(“%d\n”, r % 100);
+
+16 x--;
+
+17 }
+
+18
+
+19 return(0);
+
+20
+
+21 }
+
+22
+
+23
+
+This modification restricts the output to numbers between 0 and 99. The code should be saved, built, and run. There might be a few single digits in there. The single digits don't appear to be appropriately formatted. You can update the printf statement again to align the numbers. Put a ‘2' in the percent d placeholder this time.
+
+1 #include <stdio.h>
+
+2 #include <stdlib.h>
+
+3 #include <time.h>
+
+4
+
+5 int main()
+
+6 {
+
+7 int x, r;
+
+8
+
+9 srand((unsigned)time(NULL)); /*Seed randomizer */
+
+10
+
+11 x = 10;
+
+12 while(x > 0)
+
+13 {
+
+14 r = rand();
+
+15 printf(“%2d\n”, r % 100);
+
+16 x--;
+
+17 }
+
+18
+
+19 return(0);
+
+20
+
+21 }
+
+22
+
+23
+
+The ‘2' specifies a two-character, right-justified width for integer output. Save, compile, and execute the code. Now you'll see a single digit, but it'll be aligned to the right, which looks better.
+
+
+
+
+
+Do/While Loop
+
+
+
+The Do/While loop is another sort of loop. It's similar to an upside-down while loop, but it ensures that the loop runs at least once. Take a look at the following code:
+
+#include <stdio.h>
+
+int main()
+
+{
+
+char ch;
+
+ch = ‘A’;
+
+do
+
+{
+
+putchar(ch);
+
+ch++;
+
+}
+
+while (ch != ‘z’);
+
+putchar(‘\n’);
+
+return(0);
+
+}
+
+The Do/While loop begins with a Do statement on line 9. It is in perfect condition. Instead, the statements are carried out one by one. Line 14 contains the while condition. The condition of the loop is the variable ch. Line 7 initializes the variable, which is subsequently changed in line 12. Make a copy of the code and execute it.
+
+Because it's an exit condition, the letter 'Z isn't printed. If you want to show the letter ‘z,' set the exit condition to ‘z + 1' as follows:
+
+#include <stdio.h>
+
+int main()
+
+{
+
+char ch;
+
+ch = ‘A’;
+
+9 do
+
+10 {
+
+11 putchar(ch);
+
+12 ch++;
+
+13 }
+
+14 while (ch != ‘z’+1);
+
+15
+
+16 putchar(‘\n’);
+
+17
+
+18 return(0);
+
+19 }
+
+20
+
+Save the code and execute it. An eternal loop is demonstrated in the code below. Because the while loop's evaluation is always one, there is no exit condition.
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 while(1)
+
+6 {
+
+7 printf(“I’m endlessly looping! “);
+
+8 }
+
+9
+
+10 return(0);
+
+11 }
+
+12
+
+Make a copy of the code and execute it. To cancel the software and put an end to the craziness, press Ctrl + C. Endless loops have their place, although they're usually inadvertent. The break statement, on the other hand, can be used to break the loop. At line 8 of the code above, add a break statement like follows:
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 while(1)
+
+6 {
+
+7 printf(“I’m endlessly looping! “);
+
+8 break;
+
+9 }
+
+10
+
+11 return(0);
+
+12 }
+
+13
+
+Don't forget to finish the break statement with a semi-colon. Save, compile, and execute the code. Because the break statement exits the loop, it just rotates once. A break can even be used to break out of a loop early. Take a look at the following code:
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 int a = 0;
+
+6
+
+7 while(1)
+
+8 {
+
+9 puts(“Here I go…!”);
+
+10 a++;
+
+11 if(a > 10)
+
+12 break;
+
+13 }
+
+14
+
+15 return(0);
+
+16 }
+
+17
+
+18
+
+
+
+The condition of the while loop is unlimited and cannot be changed. The variable is used to keep track of how many times the loop iterates. The loop is broken when it is greater than 10. Could you make a copy of the code and execute it? Of course, evaluating variables at the while loop's parenthesis would be a preferable option. You can give it a shot on your own.
+
+
+
+
+
+The For keyword
+
+
+
+In C code, the keyword is used to create loops. Unlike the while loop, the loop is set up on a single line, making it more mysterious. However, it is still a more popular, or perhaps more typical, loop.
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 int x;
+
+6
+
+7 for(x=0;x<10;x++)
+
+8 printf(“%d\n”,x);
+
+9
+
+
+
+10 return(0);
+
+11 }
+
+12
+
+13
+
+
+
+The for loop is discussed in this section. We'll learn how to put up the loop and decipher its components. On line 7, there is a for a loop. The statement for the loop is divided into three pieces, each separated by a semicolon.
+
+The startup is the first step. ‘x=0,' an assignment made at the start of the loop, is the statement. The looping condition is the second. As long as this condition is proper, the loop will repeat x10. The iteration statement comes last. This statement is executed each time the loop is repeated. The value of x is increased in this case.
+
+The semi-colon does not follow the parenthesis of the for statement. Instead, the semi-colon is placed after a single looping phrase, as seen on line 8, or a sequence of statements contained in curly brackets. Could you make a copy of the code and execute it? The numbers 0 through 9 are displayed. This is relatively standard for a C loop. You start counting at 0 in C programming, not 1.
+
+Humans begin numbering from one. Update the print statement on line 8 to read: To fix the loop for the human's eyes, change the print statement to read:
+
+#include <stdio.h>
+
+int main()
+
+{
+
+int x;
+
+for(x=0;x<10;x++)
+
+printf(“%d\n”,x+1);
+
+return(0);
+
+}
+
+This adjustment simply affects the output, not the value of x. Save, compile, and execute the code.
+
+
+
+
+
+The Nested Loop
+
+
+
+One of the advantages of using a for loop is that you may leverage the nested loop notion. This is more convenient than using a while loop in C. This section will go through how to create a nested loop and avoid some of the most typical looping errors that C programmers face. Take a look at the following code:
+
+1 #include <stdio.h>
+
+2 #include <stdlib.h>
+
+3 #include <time.h>
+
+4
+
+5 int main()
+
+6 {
+
+7 int column, r;
+
+8
+
+9 srand((unsigned)time(NULL)); /* Seed Randomizer */
+
+10
+
+11 for(column=0;column<10;column++)
+
+12 {
+
+13 r = rand();
+
+14 printf(“%2d\t”,r % 100);
+
+15 }
+
+16 putchar(‘\n’);
+
+17
+
+18 return(0);
+
+19 }
+
+20
+
+21
+
+
+
+We have a sample code that generates ten numbers at random. Create and run this program. There is now a row of ten randomly generated numbers, as you can see in the output. The tab character 't,' which can be found on line 14 of the code, provides the spacing between each value.
+
+Now, let's try to construct a grid with 100 values. We need to build nine more rows of 10 values in addition to the single row of ten items we now have. Most C programmers utilize the nested loop, a secondary for loop that repeats the result ten times more. Take a look at the following code:
+
+1 #include <stdio.h>
+
+2 #include <stdlib.h>
+
+3 #include <time.h>
+
+4
+
+5 int main()
+
+6 {
+
+7 int row, column, r;
+
+8
+
+9 srand((unsigned)time(NULL)); /* Seed Randomizer */
+
+10
+
+11 for(row=0;row<10;row++)
+
+12 {
+
+
+
+13 for(column=0;column<10;column++)
+
+14 {
+
+15 r = rand();
+
+16 printf(“%2d\t”,r % 100);
+
+17 }
+
+18 }
+
+19 putchar(‘\n’);
+
+20
+
+21 return(0);
+
+22 }
+
+23
+
+24
+
+The code above is a tweaked version of the code we previously used. It now has one additional loop. The old loop, the column loop, has been replaced by a new loop called the row loop. The indentation in the code is for readability, as it makes the curly brackets of each sentence match up. Create and run this program. As you can see, you now have a grid of 100 values that were chosen at random. Take a look at the following code:
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 int alpha, numeric;
+
+6
+
+7
+
+8 for(alpha=’A’;alpha<’K’;alpha++)
+
+9 {
+
+10 for(numeric=0;numeric<10;numeric++)
+
+11 printf(“%c%d\t”,alpha,numeric);
+
+12 putchar(‘\n’);
+
+13 }
+
+14
+
+15 return(0);
+
+16 }
+
+17
+
+18
+
+The nested loop shown above may be a little easier to understand. The outer alpha loop goes from A to K, with K being the final letter. From 0 to 9, the inner loop loops. Because this inner loop just has one statement, you'll see that it doesn't use any curly brackets. The loop variables are displayed online 11. Create and run this program.
+
+In the output, you can see how the nested loops work better. The outer loop, loop A, is the first to run. The values 0 through 9 are then output by the inner loop. Then there's loop B, which also outputs 0 through 9, and so on. Take a look at the following code:
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 char ch, t;
+
+6
+
+7 printf(“Type a letter ‘a’ to ‘z’: “);
+
+8 scanf(“%c”,$ ch);
+
+9
+
+10 for(t=’a’;t<=’z’;t++)
+
+11 {
+
+12 putchar(t);
+
+13 }
+
+14 putchar(‘\n’);
+
+15
+
+16 return(0);
+
+17 }
+
+18
+
+19
+
+After prompting for input, the alphabet is presented. We'd like you to consider how to end the loop when the letter input equals the loop's variable t. To accomplish this, you don't need to edit the four statements. Instead, you should include statements within the loop that will cause the loop to break when the character is entered.
+
+The key is to use an if test and a break statement afterward. Take a look at the following solution:
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 char ch, t;
+
+6
+
+7 printf(“Type a letter ‘a’ to ‘z’: “);
+
+8 scanf(“%c”,$ch);
+
+9
+
+10 for(t=’a’;t<=’z’;t++)
+
+11 {
+
+12 putchar(t);
+
+13 if( t == ch )
+
+14 break;
+
+15 }
+
+16 putchar(‘\n’);
+
+
+
+17
+
+18 return(0);
+
+19 }
+
+20
+
+21
+
+
+
+Add if( t == ch) at line 13 and then break. If you don't include the two equal signs, you'll get an assignment. Assignments in C always evaluate to true. After the break statement, don't forget to add a semi-colon. Save, compile, and execute the code.
+
+In a statement, remember to double-check the looping condition and the iteration. If either is incorrect, the loop will continue indefinitely. The compiler does not check for logical problems. That is your responsibility. Reading the for statement is an excellent tip. Set the value of t to character a. Increase t while it is less than or equal to character z.
+
+If you changed the condition to merely t=z, for example, the loop would never end because it would evaluate true.
+
+So keep an eye on your conditions and iterations.
+
+
+
+
+
+Chapter 7
+
+
+
+Anatomy of a Function
+
+
+
+The C library is bursting at the seams with valuable functions. These functions can handle a lot of things, but they might not be enough for your projects. As a result, you can create your own C language functions as needed. Most programmers have dozens, if not hundreds, of functions of their own.
+
+This chapter provides an overview of the function. You'll learn how to create and prototype a function, as well as how to call or access it and how to exit a function early. Like everything else in the C language, a function has its style, and there are a few rules to follow when adding one to your code.
+
+A function has a name, a type, and parameters enclosed in brackets. A type is a value that the function returns as its output. The name is a one-of-a-kind identifier for the function. The arguments are zero, one, or more values that are supplied as input to the function. The alpha function has no input or output in the C language, which is correct. As a result, it's a void function.
+
+void alpha(void)
+
+The variable type Void means "I don't have a variable type." The count function is an integer function. It returns or creates integer values. It necessitates more input and hence lacks arguments.
+
+int count(void)
+
+The hangUp is a void function since it returns no values. However, it only accepts one character as input. The protagonist is a counter-argument. Variable ch is used to refer to it. A function must be introduced to the compiler before it may be used. As a result, the compiler can double-check its arguments to guarantee that they are being utilized correctly.
+
+A parenthesis follows the name of the function. When a function is invoked, control is passed to the statements within the function. When the function is finished, flow resumes with the statement following the function call. Two functions are included in the code below:
+
+1 #include <stdio.h>
+
+2
+
+3 void blorf(void);
+
+4
+
+5 int main ()
+
+6 {
+
+7 puts(“The main () function always runs first”);
+
+8 blorf();
+
+9 puts(“Thanks, blorf()”);
+
+10
+
+11 return(0);
+
+12 }
+
+13
+
+Every C program must have a primary function. The blorf function is also visible. The blorf function is prototyped on line 3. This gives the compiler information about the function's type and arguments. The compiler can check the prototype to ensure that the function is being utilized correctly. The prototype is also a statement. It comes to a semi-colon in conclusion.
+
+The function is called on line 8. The parenthesis is empty since it has no arguments. Line 14 is where you'll find the function itself. This is essentially the same as the prototype, except without the semi-colon. Curly brackets surround the statements that make up the function. Now you may compile and run the code.
+
+You simply specify the function again to call it again. Line 8 should be copied to line 9.
+
+1 #include <stdio.h>
+
+2
+
+3 void blorf(void);
+
+4
+
+5 int main ()
+
+6 {
+
+7 puts(“The main () function always runs first”);
+
+8 blorf();
+
+9 blorf();
+
+10 puts(“Thanks, blorf()”);
+
+11
+
+12 return(0);
+
+13 }
+
+14
+
+Save, compile, and execute the code. As you can see, the output is duplicated. Before the function appears in the code, the prototype acts as a definition for it, describing how to utilize it. Only when writing the function before it is utilized can you avoid specifying a prototype? Take a look at the code below for an example:
+
+1 #include <stdio.h>
+
+2
+
+3 void soup(void);
+
+4 {
+
+5 puts(“Pea green soup!”);
+
+6 }
+
+7
+
+8 int main()
+
+9 {
+
+10 print (“For breakfast I had “);
+
+11 soup();
+
+12 print (“For lunch I had “);
+
+
+
+13 soup();
+
+14
+
+15 return(0);
+
+16 }
+
+17
+
+18
+
+Above the primary function is the sup function. That's fine since the compiler still recognizes them in a function, and the first function in the program is always performed. The prototype for the sup function lacks here. Make a copy of the code and execute it.
+
+As you can see, the code produces the expected text. But consider this: After the main function, place the sup function as follows:
+
+1 #include <stdio.h>
+
+2
+
+3
+
+4 {
+
+5 puts(“Pea green soup!”);
+
+6 }
+
+7
+
+8 int main()
+
+9 void soup(void);
+
+10 {
+
+11 printf (“For breakfast I had “);
+
+12 soup();
+
+13 printf(“For lunch I had “);
+
+14 soup();
+
+15
+
+16 return(0);
+
+17 }
+
+18
+
+19
+
+Save and construct the code. One warning will appear on most machines. Your compiler may choose to report the wrongdoings differently. It's not good in any case. You must include the prototype. Move the void soup(void) function above the primary function.
+
+1 #include <stdio.h>
+
+2
+
+3
+
+4 {
+
+5 puts(“Pea green soup!”);
+
+6 }
+
+7
+
+8 void soup(void);
+
+
+
+9 int main()
+
+10
+
+11 {
+
+12 printf(“For breakfast I had “);
+
+13 soup();
+
+14 printf(“For lunch I had “);
+
+15 soup();
+
+16
+
+17 return(0);
+
+18 }
+
+19
+
+20
+
+There are no errors now, and the output is the same as it was before. Take a look at the following code:
+
+1 #include <stdio.h>
+
+2
+
+3 void cheers(void);
+
+4
+
+5 int main()
+
+6 {
+
+7 puts(“Everyone gets free dinner!”);
+
+8 cheers();
+
+9 puts(“Everyone gets free dessert!”);
+
+10 cheers();
+
+11 puts(“Everyone pays higher taxes!”);
+
+12
+
+13 return(0);
+
+14 }
+
+15
+
+16 void cheers(void);
+
+17 {
+
+18 int x;
+
+19
+
+20 for(x=0;x<3;x++)
+
+21 printf(“Huzzah! “);
+
+22 putcher(‘\n’);
+
+23 }
+
+24
+
+25
+
+The cheers function has its variable—x—on line 18 of this code. This variable is only used in this function to make the string repeat three times. Make a copy of the code and execute it. Variable x cannot be referenced outside of its function. Insert a line above line 11 that shows the value to prove it.
+
+1 #include <stdio.h>
+
+2
+
+3 void cheers(void);
+
+4
+
+5 int main()
+
+6 {
+
+7 puts(“Everyone gets free dinner!”);
+
+8 cheers();
+
+9 puts(“Everyone gets free dessert!”);
+
+10 cheers();
+
+11 printf(“%d\n”, x);
+
+12 puts(“Everyone pays higher taxes!”);
+
+13
+
+14 return(0);
+
+15 }
+
+16
+
+17 void cheers(void);
+
+18 {
+
+19 int x;
+
+20
+
+21 for(x=0;x<3;x++)
+
+22 printf(“Huzzah! “);
+
+23 putcher(‘\n’);
+
+24 }
+
+25
+
+26
+
+Make a note of the change and proceed with the construction. It's pointless to try to run it because you won't be able to. “What the hell is x?” the compiler is effectively asking. Try defining x and setting its value within the primary function now.
+
+1 #include <stdio.h>
+
+2
+
+3 void cheers(void);
+
+4
+
+5 int main()
+
+6 {
+
+7 int x;
+
+8
+
+9 x=21;
+
+10 puts(“Everyone gets free dinner!”);
+
+11 cheers();
+
+12 puts(“Everyone gets free dessert!”);
+
+13 cheers();
+
+14 printf(“%d\n”, x);
+
+15 puts(“Everyone pays higher taxes!”);
+
+16
+
+17 return(0);
+
+
+
+18 }
+
+19
+
+20 void cheers(void);
+
+21 {
+
+22 int x;
+
+23
+
+24 for(x=0;x<3;x++)
+
+25 printf(“Huzzah! “);
+
+26 putchar(‘\n’);
+
+27 }
+
+28
+
+29
+
+Save, compile, and run the code now. The x variable in the cheers function has no effect on the value of x in the primary function. They are thought to be two distinct variables. Another thing to keep in mind: When the last statement is executed, the function is said to be finished. That's a putchar on line 26 of the cheers function.
+
+Using the return keyword, you can exit a function early. At line 26, type return.
+
+
+
+1 #include <stdio.h>
+
+2
+
+3 void cheers(void);
+
+4
+
+5 int main()
+
+6 {
+
+7 int x;
+
+8
+
+9 x=21;
+
+10 puts(“Everyone gets free dinner!”);
+
+11 cheers();
+
+12 puts(“Everyone gets free dessert!”);
+
+13 cheers();
+
+14 printf(“%d\n”, x);
+
+15 puts(“Everyone pays higher taxes!”);
+
+16
+
+17 return(0);
+
+18 }
+
+19
+
+20 void cheers(void);
+
+21 {
+
+22 int x;
+
+23
+
+24 for(x=0;x<3;x++)
+
+25 printf(“Huzzah! “);
+
+26 return;
+
+
+
+27 putchar(‘\n’);
+
+28 }
+
+29
+
+30
+
+
+
+Because the cheers function is a void function, it doesn't return anything, and you don't need to specify a value. Because leading is an int function, the return must specify a value in the primary function, as it does at line 17. After you've saved your changes, build and run the code.
+
+Because the putchar statement is omitted, the output is messy. Because of the return statement immediately before it, that code is never run. More often than not, a function will return early due to a condition, which is commonly an if statement or a loop. Otherwise, the function will bail out, and control will be returned to the calling function wherever the return is found. Control is returned to the operating system in the case of the primary function.
+
+It's that I/O thing again; a function has to function. Sure, a void function is required and obvious, but most functions chew on some input and do some action based on it.
+
+In this section, we'll look at how functions handle arguments and values supplied to them. You'll learn how to declare such a function, how it handles values, and how to pass a function more than one value. The repeat function, which takes one argument—an integer—can be found in the code below.
+
+#include <stdio.h>
+
+void repeat(int count);
+
+int main()
+
+{
+
+puts(“At first the raven was like”);
+
+repeat(1);
+
+puts(“But then he was all:”);
+
+repeat(5);
+
+return(0);
+
+}
+
+void repeat(int count)
+
+{
+
+int x;
+
+for(x=0;x<count;x++)
+
+puts(“Nevermore!”);
+
+}
+
+The integer variable count is used within the function. Lines 8 and 10 calls the function, each time with a different parameter. A local variable x is declared inside the function. Along with the count variable, it's utilized in the for statement. Make a copy of the code and execute it.
+
+Integer variables can also be passed as arguments to the function. Make the following changes to the code:
+
+In the primary function, declare integer variables a and b.
+
+
+
+Assign the value 1 to a and 5 to b.
+
+
+
+Use a and b in the two repeat functions.
+
+
+
+1 #include <stdio.h>
+
+2
+
+3 void repeat(int count);
+
+4
+
+5 int main()
+
+6 {
+
+7 int a, b;
+
+8
+
+9 a = 1;
+
+10 b = 5;
+
+11
+
+12 puts(“At first the raven was like”);
+
+13 repeat(a);
+
+14 puts(“But then he was all:”);
+
+15 repeat(b);
+
+16
+
+17 return(0);
+
+18 }
+
+19
+
+20 void repeat(int count)
+
+21 {
+
+22 int x;
+
+23
+
+24 for(x=0;x<count;x++)
+
+25 puts(“Nevermore!”);
+
+26 }
+
+27
+
+28
+
+
+
+After saving your changes, build and run the code. As you can see, the result is the same. Take a look at the following code:you've
+
+#include <stdio.h>
+
+3 void product(float a, float b, float c);
+
+4
+
+5 int main()
+
+6 {
+
+7 float x,y,z;
+
+8
+
+9 printf(“Type three numbers, separated by spaces: “);
+
+10 scanf(“%f %f %f”,&x,&y,&z);
+
+11 product(x,y,z);
+
+12
+
+13 return(0);
+
+14 }
+
+15
+
+16 void product(float a, float b, float c)
+
+17 {
+
+18 float p;
+
+19
+
+20 p = a * b * c;
+
+21 printf(“%f * %f *%f = %f\n”,a,b,c,p);
+
+22 }
+
+23
+
+There is a method in this code that takes three arguments. Three floating-point numbers in this scenario. The scanf function on line 10 reads in the three numbers. If you format the input to match the format string, this is possible. The product of the three numbers is calculated and shown in the product function. Make a copy of the code and execute it.
+
+The number of arguments that a function can accept is unbounded. The more disagreements there are, the more likely the format will be messed up. Functions don't have to eat the same sort of arguments all the time. Take a look at the following code:
+
+#include <stdio.h>
+
+void bar(char c, int count);
+
+for(x=1;x<11;x++)
+
+bar(‘*’,x*2);
+
+return(0);
+
+}int main(){int x;
+
+14
+
+15 void bar(char c, int count)
+
+16 {
+
+17 int x;
+
+18
+
+19 for(x=0;x<count;x++)
+
+20 putchar(c);
+
+21 putchar(‘\n’);
+
+22 }
+
+23
+
+24
+
+A character and an integer value are both accepted by the bar function. Make a copy of the code and execute it. The bar function outputs a bar of a specific character across the display using both of its inputs.
+
+The C library's majority of functions return a value. Even if the value isn't used, it's still there. Functions can generate output by returning a value. Most of the time, the function's output is determined by the input or parameters supplied. We'll go over how functions return values in this section. They can either generate the data themselves or adjust arguments to produce desired results.
+
+We'll also go over some of the rules and restrictions applicable to the C programming language functions. A function called 'gimmeAnA' is included in the code below. It's a character function that returns a char. According to its prototype at line 3, the function has no input.
+
+1 #include <stdio.h>
+
+2
+
+3 char gimmeAnA(void);
+
+4
+
+5 int main()
+
+6 {
+
+7 char grade;
+
+8
+
+9 grade = gimmeAnA();
+
+10 printf(“On this test your received an %c.\n”,grade);
+
+11
+
+12 return(0);
+
+13 }
+
+14
+
+15 char gimmeAnA(void)
+
+16 {
+
+17 return(‘A’);
+
+18 }
+
+19
+
+20
+
+
+
+At line 9, the function is called, and the result is assigned to the grade variable. In line 15, the method returns the single character ‘A.' Create and run this program.
+
+When a function returns a value, you can utilize it right away. You can change the code to eliminate the grade variable. Remove the assignment first, then use the gimmeAnA function to replace the variable in print.
+
+1 #include <stdio.h>
+
+2
+
+3 char gimmeAnA(void);
+
+4
+
+5 int main()
+
+6 {
+
+7 printf(“On this test your received an %c.\n”,gimmeAnA());
+
+8
+
+9 return(0);
+
+10 }
+
+11
+
+12
+
+13 char gimmeAnA(void)
+
+14 {
+
+15 return(‘A’);
+
+16 }
+
+17
+
+18
+
+After you've saved your changes, build and run the code. As you can see, the result is still an ‘A.' Take a look at the following code:
+
+1 #include <stdio.h>
+
+2
+
+3 float product(float a, float b, float c);
+
+4
+
+5 int main()
+
+6 {
+
+7 float a,x,y,z;
+
+8
+
+9 printf(“Type three numbers, separated by spaces: “);
+
+10 scanf(“%f %f %f”,&x,&y,&z);
+
+11 a = product(x,y,z);
+
+12 printf(“%f * %f * %f = %f\n”,x,y,z,a);
+
+13
+
+14 return(0);
+
+15 }
+
+16
+
+17 float product(float a, float b, float c)
+
+
+
+18 {
+
+19 float p;
+
+20
+
+21 p = a * b * c;
+
+22 return(p);
+
+23 }
+
+24
+
+25
+
+The product method in this code has been improved to return the product of the values supplied, making more sense. Could you make a copy of the code and execute it? To see their product, type three values and then hit Enter.
+
+It's possible to clean up the code a little bit. Variable p, for example, isn't required in the product function.
+
+You can get rid of it if you just want the merchandise returned.
+
+1 #include <stdio.h>
+
+2
+
+3 float product(float a, float b, float c);
+
+4
+
+5 int main()
+
+6 {
+
+7 float a,x,y,z;
+
+8
+
+9 printf(“Type three numbers, separated by spaces: “);
+
+10 scanf(“%f %f %f”,&x,&y,&z);
+
+11 a = product(x,y,z);
+
+12 printf(“%f * %f * %f = %f\n”,x,y,z,a);
+
+13
+
+14 return(0);
+
+15 }
+
+16
+
+17 float product(float a, float b, float c)
+
+18 {
+
+19 return(a * b * c);
+
+20 }
+
+21
+
+22
+
+Save your modifications before building and running the code. As you can see, the outcome is the same. The code below shows a more realistic example:
+
+#include <stdio.h>
+
+int max(int x, int y);
+
+void isLarger(int big);
+
+6 int main()
+
+7 {
+
+8 int a,b,larger;
+
+9
+
+10 printf(“Type two integers separated by a space: “);
+
+11 scanf(“%d %d”,&a,&b);
+
+12 larger = max(a,b);
+
+13 if(a == larger)
+
+14 isLarger(a);
+
+15 else
+
+16 isLarger(b);
+
+17
+
+18 return(0);
+
+19 }
+
+20
+
+21 int max(int x, int y)
+
+22 {
+
+23 if(x > y)
+
+24 return(x);
+
+25 return(y);
+
+26 }
+
+27
+
+28 void isLarger(int big)
+
+29 {
+
+30 printf(“Value %d is larger.\n”,big);
+
+31 }
+
+32
+
+33
+
+Max is a veteran when it comes to learning C. It receives two values and returns the greater of the two. We've also included the more considerable function, which does nothing but demonstrates how many functions can be declared within the code. Could you make a copy of the code and execute it?
+
+Separate two different values with space. The code, as you can see, shows the greater of the two values. Let's discuss the drawbacks now.
+
+A function in the C programming language can only return one value. You can't return multiple values, and we can't conceive of why you'd want to. A function can return an array or a structure variable. These variable types will be discussed in more detail in a subsequent chapter. They are, however, still single variables. We'd like to go through the primary function.
+
+Main is an integer function, as you can see in the prior source code. The return statement is needed, as is the specification of an integer value. The primary function's parenthesis is empty. This is a cheat—a shortcut.
+
+The primary function's arguments are known to the compiler. There are two of them, but you don't need to identify them if they aren't used. In the primary function, the parenthesis is left blank. This is not something you can get away with if you declare and utilize other functions.
+
+Character Manipulation Functions
+
+Because there is so much that can be done with characters, the C library includes several character manipulation functions. We'll go through a number of those functions and how to use them in your code in this section. In addition, we provide an overview of logical expressions, which can be helpful when working with characters.
+
+Characters appear in your C code either singly or in a string, an array of characters. You can alter characters one at a time or in a string, which is more usual. A ctype. the h header file is included in the code below, and it prototypes the character testing and manipulation functions:
+
+1 #include <stdio.h>
+
+2 #include <ctype.h>
+
+3
+
+4 int main()
+
+5 {
+
+6 int ch = ‘a’;
+
+7
+
+8 printf(“Big %c\n”,toupper(ch));
+
+9 printf(“Little %c\n”,tolower(ch));
+
+10 printf(“What begins with %c?\n”,ch);
+
+11
+
+12 return(0);
+
+13 }
+
+14
+
+15
+
+
+
+The toupper and to lower functions can be found on lines 8 and 9. The toupper function creates a letter's uppercase version. The tolower function creates a letter's lowercase form. The print routines instantly use the results. It's important to note that these functions only accept numeric values, not characters. Even though the variables are integers, you can use the printf function to display the result by using percent c. Make a copy of the code and execute it.
+
+The upper and lower functions did not affect the variable ch, as seen by the output of the final print command at line 10. They just generate an equivalent in upper or lower case. These routines can also be used on a string. You must dissect the string in a loop to accomplish this. Take a look at the following code:
+
+#include <stdio.h>
+
+
+
+#include <ctype.h>
+
+
+
+3
+
+4 int main()
+
+5 {
+
+6 int c;
+
+7
+
+8 do
+
+9 {
+
+10 c = getchar();
+
+11 c = toupper(c);
+
+12 putchar(c);
+
+13 }
+
+14 while(c != ‘\n’);
+
+15
+
+
+
+The toupper function uses an integer variable once more. In line 11, the input is analyzed and changed to upper case before being output. Because the C language is stream-oriented, you won't see the output until you push Enter. Make a copy of the code and execute it.
+
+Go ahead and start typing. Enter the code with the Enter key. The result is all caps, but observe how the toupper function does not affect punctuation symbols or spaces. The majority of the functions in the header file type. His testing routines. They're used to determine whether a character is a letter, a number, space, or whether it's in upper or lower case. These routines return true or false results, which you can use in your code to determine what was typed.
+
+The code below, for example, utilizes the isalpha function to detect whether a character is a letter of the alphabet or not.
+
+1 #include <stdio.h>
+
+2 #include <ctype.h>
+
+3
+
+4 int main()
+
+5 {
+
+6 int acter;
+
+7
+
+8 do
+
+9 {
+
+10 acter = getchar();
+
+11 if(isalpha(acter))
+
+12 putchar(acter);
+
+13 }
+
+14 while( acter != ‘\n’);
+
+15
+
+
+
+If it is, the method returns true; otherwise, it returns false. The input is received and checked in the do/while loop. If the character is a letter of the alphabet, the if statement on line 11 returns true. If this is the case, it is displayed. Make a copy of the code and execute it. Fill in the blanks with text, symbols, and numbers. When you press the Enter key, only the alphabet characters (upper and lowercase) appear.
+
+Many of the character manipulation functions can be tried out by modifying the source code. Change is alpha to support in line 11, for example. Only upper case letters are now visible. To test the change, save it, build it, and run it.
+
+The type. the h header file also defines the following functions:
+
+is lower – detects only lowercase letters
+
+number – returns true for any number character 0 through 9
+
+blank – detects whitespace characters—space tab or newline
+
+
+
+You can also write your character manipulation functions; however, knowing C logical operators will come in handy.
+
+Logical Operators
+
+The logical operators of the C programming language are used to compare two or more expressions. Whether the result is true or false is determined by the operators. There are three operators to choose from:
+
+• && logical AND
+
+• || logical OR
+
+• ! logical NOT
+
+To avoid being confused with standard terms, these are frequently written in all capitals. Both conditions—this AND that—must be true for an AND operation to be accurate. Either of the conditions must be valid for an OR operator to work—this OR that. The condition for the NOT operator must be false, which is counterintuitive, but that's how NOT works—NOT this.
+
+The AND operator, for example, examines the following two conditions:
+
+a = 7;
+
+if( a > 0 && a , 10 )
+
+TRUE && TRUE == TRUE
+
+Both prerequisites are met in this case. As a result, the if statement is run. One of the requirements in the example below is false. As a result, the if statements are omitted.
+
+a = 7;
+
+if( a > 0 && a < 5)
+
+TRUE && FALSE == FALSE
+
+Only one of the requirements must be confirmed in the logical OR operator. The if statement will be executed in the next section.
+
+a = 50;
+
+if( a < 10 || a > 25 )
+
+FALSE || TRUE == TRUE
+
+When both conditions are false, the if statement won’t be executed.
+
+a = 50;
+
+if( a < 10 || a > 75 )
+
+FALSE || FALSE == FALSE
+
+It also negates the condition in the case of NOT. Both requirements are untrue in this case:
+
+a = 50:
+
+if( !(a!=50))
+
+TRUE
+
+
+
+
+
+The value of variable an is 50. The NOT operator, on the other hand, reverses this and makes it true. Finally, in the C programming language, all values are true except zero, which is false. True is usually represented by the number 1. It might, however, be a negative one or any other non-zero value. Take a look at the code below for an example of how to create your character test:
+
+
+
+1 #include <stdio.h>
+
+2
+
+3 int iscaps(int ch);
+
+4
+
+5 int main()
+
+6 {
+
+7 int c;
+
+8
+
+9 do
+
+10 {
+
+11 c = getchar();
+
+12 if(iscaps(c));
+
+13 putchar(c);
+
+14 }
+
+15 while( c != ‘\n’);
+
+16
+
+
+
+17 return(0);
+
+18 }
+
+19
+
+20 int iscaps(int ch)
+
+21 {
+
+22 if( ch < ‘A’ || ch > ‘Z’)
+
+23 return(0);
+
+24 else
+
+25 return(1);
+
+26 }
+
+27
+
+28
+
+In line 22, a sensible comparison is made. Read the following condition to see how it works: If variable ch has a value less than A or a value larger than Z. The function returns false if either of those conditions is false, indicating that the character is not uppercase. Otherwise, true is returned by the function.
+
+Consider changing the caps function to is lowercase and returning true or false depending on the condition. What would you do if you had to do it? First and foremost, the function's name should be changed to something more accurate.
+
+1 #include <stdio.h>
+
+2
+
+3 int isLowerCase(int ch);
+
+4
+
+5 int main()
+
+6 {
+
+7 int c;
+
+8
+
+9 do
+
+10 {
+
+11 c = getchar();
+
+12 if(isLowerCase(c));
+
+13 putchar(c);
+
+14 }
+
+15 while( c != ‘\n’);
+
+16
+
+17 return(0);
+
+18 }
+
+19
+
+20 int isLowerCase(int ch)
+
+21 {
+
+22 if( ch < ‘a’ || ch > ‘z’)
+
+23 return(0);
+
+
+
+24 else
+
+25 return(1);
+
+26 }
+
+27
+
+28
+
+Change the ‘A' to ‘a a' and the ‘Z' to ‘I'm after you've changed the function calls. Save, compile, and execute the code. Only lowercase letters appear in the output, as you can see. Logic operators can be used to build almost any character test. In the following chapters of this book, you'll see more instances of logical operators in action.
+
+
+
+
+
+Chapter 8
+
+
+
+
+
+Working with Strings
+
+
+
+A string is an amusing object. It's not technically a variable in the C programming language, but it's used that way. Because of their peculiar nature, you must be highly cautious while manipulating strings in your code. Working with strings is covered in this section.
+
+We'll show you how to collect data about a string, connect strings, compare strings, and locate one string within another. These tasks represent the string manipulation functions in the C language. Take a look at the following code:
+
+1 #include <stdio.h>
+
+2 #include <string.h>
+
+3
+
+4 int main()
+
+5 {
+
+6 char string[] = “Just how long am I?”;
+
+7 int len;
+
+8
+
+9 len = strlen(string);
+
+10 printf(“The following string:\n”);
+
+11 puts(string);
+
+12 printf(“is %d characters long.\n”,len);
+
+13
+
+14 return(0);
+
+15 }
+
+16
+
+17
+
+Strlen
+
+In line 6, a string is declared. The char variable type is required since it is a character array. The string is the name of the variable, which is followed by empty brackets. Line 9 introduces the strlen string length method. The number of characters in a string is returned and saved in the len variable. Make a copy of the code and execute it.
+
+The string has a length of 19 characters. You can count the characters in the source code, but you won't always benefit from knowing exactly how many there are. Consider what happens if the user types in a string. Take a look at the following code:
+
+1 #include <stdio.h>
+
+
+
+2 #include <stdio.h>
+
+
+
+3
+
+4 int main()
+
+5 {
+
+6 char input[64]; /* 63 characters plus null */
+
+7 int len;
+
+8
+
+9 printf(“Instructions: “);
+
+10 fgets(input,64,stdin);
+
+11 len = strlen(input);
+
+12 printf(“You typed %d characters of instructions.\n”,len);
+
+13
+
+14 return(0);
+
+15 }
+
+The fgets function is used to fetch input, which is then saved in an input buffer. After that, the strlen method returns the string's length. The result is displayed in the following statement. Could you make a copy of the code and execute it?
+
+Remember that strings in C always finish in a null character. That extra character will require additional storage. The software generates the character, but you must make room for it in the input buffer. When measuring the length of a string, the strlen function ignores the null character. Take a look at the following code example:
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 char first[] = “I would like to go “;
+
+6 char second[] = “from here to there\n”;
+
+7
+
+8 return(0);
+
+9 }
+
+10
+
+
+
+
+
+Strcat / Concatenation
+
+
+
+This is merely a portion of the code. We'll figure out how to join these two strings—the first and second—to form a new string. The addition operator is used in many computer languages. Some programming languages, for example, might write the code to join the two strings to form a new string like this:
+
+1 #include <stdio.h>
+
+
+
+2
+
+3 int main()
+
+4 {
+
+5 char first[] = “I would like to go “;
+
+6 char second[] = “from here to there\n”;
+
+7
+
+8 printf(“%s\n”, first+second);
+
+9
+
+10 return(0);
+
+11 }
+
+12
+
+
+
+This, however, would not work in the C programming language. You could put both strings on top of each other, but that's not the solution we're looking for. All you have to do now is connect the strings. Instead of saying "glue the strings together," C programmers now say "concatenate," which is derived from the Latin term for "to join two strings."
+
+But first, clean up the code. Create a storage location, or a buffer, for the two strings that result.
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 char first[] = “I would like to go “;
+
+6 char second[] = “from here to there\n”;
+
+7 char storage[64];
+
+7
+
+8 printf(“%s\n”, first+second);
+
+9
+
+10 return(0);
+
+11 }
+
+12
+
+We've built a storage location—buffer—for the resulting two strings, as you can see in line 7. The storage buffer can be configured to hold any amount of characters, including the null character. In this case, we're merely setting it to 64.
+
+The first string will then be copied into that storage place. The strcpy function, often known as string copy, copies one string into another. The string ‘first' is duplicated in the storage buffer at line 9.
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 char first[] = “I would like to go “;
+
+6 char second[] = “from here to there\n”;
+
+7 char storage[64];
+
+
+
+7
+
+8 strcpy(storage,first);
+
+9
+
+10 return(0);
+
+11 }
+
+12
+
+You should also prototype the strcpy function. The string. H header file declares all string functions.
+
+1 #include <stdio.h>
+
+2 #include <string.h>
+
+3
+
+4 int main()
+
+5 {
+
+6 char first[] = “I would like to go “;
+
+7 char second[] = “from here to there\n”;
+
+8 char storage[64];
+
+9
+
+10 strcpy(storage,first);
+
+11
+
+12 return(0);
+
+13 }
+
+14
+
+The string ‘second' must then be inserted at the end of the storage buffer. The strcat, or string concatenation, statement appends the string "second" to the end of whatever is currently in the storage buffer. The findings should then be displayed.
+
+#include <stdio.h>
+
+1 #include <string.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 char first[]
+
+6 char second[]
+
+7 char storage[64];
+
+8
+
+9 strcpy(storage,first);
+
+10 strcat(storage,second);
+
+11 printf(“Here is your string:\n%s”,storage);
+
+12
+
+13 return(0);
+
+14
+
+15 }= “I would like to go “;=“fromheretothere\n”;
+
+
+
+Save, build and run the code. It worked, as you can see from the output.
+
+
+
+
+
+Strcmp / String compare
+
+
+
+A common string comparison function compares two strings. The strcmp, or string compare, the function is used to compare two strings in the code below:
+
+1 #include <stdio.h>
+
+2 #include <string.h>
+
+3
+
+4 int main()
+
+5 {
+
+6 char password[9];
+
+7 int compare;
+
+8
+
+9 printf(“Enter your password: “);
+
+10 scanf(“%8s”, password);
+
+11 compare = strcmp(password,”secret”);
+
+12 if( compare == 0 )
+
+13 puts(“You have been granted access!”);
+
+14 else
+
+15 puts(“Intruder alert!”);
+
+16
+
+17 return(0);
+
+18 }
+
+19
+
+20
+
+When both strings are identical, the value returned is zero. This is one of those odd occurrences in which zero means true. Incorrect matches are indicated by values less than or more significant than zero. You'll also notice that the scanf function only accepts eight characters as input. The input is within the buffer's eight-character limit. To account for the null character at the end of the string, the buffer is nine characters long. Make a copy of the code and execute it.
+
+Try a couple of different passwords before attempting the genuine one, which is "secret." Also, the comparison variable isn't required in this code. You can get rid of it. Remove it from the code twice and replace it with a function. Insert the strcmp function into the if statement as follows:
+
+1 #include <stdio.h>
+
+2 #include <string.h>
+
+3
+
+4 int main()
+
+5 {
+
+6 char password[9];
+
+7
+
+8 printf(“Enter your password: “);
+
+9 scanf(“%8s”,password);
+
+10 if( strcmp(password,”secret”) == 0 )
+
+11 puts(“You have been granted access!”);
+
+12 else
+
+13 puts(“Intruder alert!”);
+
+14
+
+15 return(0);
+
+16 }
+
+
+
+
+
+Strstr/ String String
+
+
+
+The last string function we'll show is strstr, which stands for string. It's used to locate one string within another. Take a look at the following code:
+
+1 #include <stdio.h>
+
+2 #include <string.h>
+
+3
+
+4 int main()
+
+5 {
+
+6 char source_string[] = “I am a stranger in a strange land”;
+
+7 char find_me[] = “strange”;
+
+8
+
+9 if( strstr(source_string,find _me) == NULL)
+
+10 puts(“String not found!”);
+
+11 else
+
+12 printf(“Founc ‘%s’ in ‘%s’\n”,find_me,source_string);
+
+13
+
+14 return(0);
+
+15 }
+
+16
+
+17
+
+The strstr function is used in this code. It's odd because you'll need to know a little more about pointers to utilize this method successfully. In a subsequent chapter, you'll learn more about this. However, for the time being, the strstr function is included in the if statement at line 9.
+
+
+
+
+
+It returns a reference to the string finds me's location in the string source string. If there is no match, the value NULL is returned. Again, NULL is a type of pointer. Make a copy of the code and execute it. The string has been found, as you can see from the output.
+
+To demonstrate that the function works, change the text for the string find me. That's about the best you can do with the strstr part until you reach the treacherous shoals of pointer land.
+
+
+
+
+
+Chapter 9
+
+
+
+C Language Constants
+
+
+
+When learning something new, you may need to take a break and ponder. That is the subject of this section: pausing and pondering on variables and values in particular. We'll also cover a few new concepts that we believe you should be aware of, especially if you're new to the C programming language. We'll look at how to make and use constants in this section. We'll also go over some of the placeholders in the printf function.
+
+In the C programming language, a constant is distinct from an instant value and a variable. It's more like a constant value that remains constant throughout the function. Constants are values that repeatedly appear in your source code.
+
+Some things remain constant. The #define directive in the preprocessor creates them. The stable is usually written in full caps, as a single word, or with simple underlines. When the compiler detects a continuous, it now expands it to the value it has been assigned.
+
+The stable version is formed and given the value 3 in the example below. Throughout the code, the compiler translates the word performance to the immediate value 3.
+
+#define VERSION 3
+
+• Constant is named VERSION
+
+• Has a value of 3
+
+• Does not end with a semi-colon
+
+Preprocessor directives are not C language statements, so keep that in mind. Do not use a semi-colon after the assignment unless it is necessary for the semi-colon to be a part of what is being defined, which is rare. Just leave out the semi-colon.
+
+The constant string AUTHOR is defined below. Double quotes must be used to encapsulate the string. This is an example of a single constant whose value is calculated using two other constants.
+
+#define AUTHOR “Adolf Hitler.”
+
+• The constant is named AUTHOR
+
+• The value is the string “Adolf Hitler.”
+
+• No semi-colon is used.
+
+Unless the ROWS or COLUMNS constants are altered, the constant GAME GRID will equal 120. In the code, they would not be modified. They would be changed as follows in the defined statement:
+
+#define ROWS 20
+
+#define COLUMNS 60
+
+#define GAME_GRID ROWS*COLUMNS
+
+• Three constants are created: ROWS, COLUMNS, and GAME_GRID
+
+• The value of GAME_GRID is based on the product of constants ROWS and COLUMNS.
+
+Take a look at the following code:
+
+This code is based on the previous chapter's example. We've tidied it up a little and added some code constants, including two #define directives to set the number of rows and columns in a grid.
+
+1 #include <stdio.h>
+
+2 #include <stdlib.h>
+
+3 #include <time.h>
+
+4
+
+5 #define ROWS 10
+
+6 #define COLUMNS 10
+
+7
+
+8 int main()
+
+9 {
+
+10 int row, column;
+
+11
+
+12 srand((unsigned)time(NULL));
+
+13
+
+14 for(row=0;row<10;row++)
+
+15 {
+
+16 for(column=0;column<10;column++)
+
+17 printf(“%2d\t”,rand() % 100);
+
+18 putchar(‘\n’);
+
+19 }
+
+20
+
+21 return(0);
+
+22
+
+23
+
+24 }
+
+Let's now alter the value 10 to reflect the constants used as an instant value in the loops.
+
+1 #include <stdio.h>
+
+2 #include <stdlib.h>
+
+3 #include <time.h>
+
+4
+
+5 #define ROWS 10
+
+6 #define COLUMNS 10
+
+7
+
+8 int main()
+
+9 {
+
+10 int row, column;
+
+11
+
+12 srand((unsigned)time(NULL));
+
+13
+
+14 for(row=0;row<ROWS;row++)
+
+15 {
+
+16 for(column=0;column<COLUMNS;column++)
+
+17 printf(“%2d\t”,rand() % 100);
+
+18 putchar(‘\n’);
+
+19 }
+
+20
+
+21 return(0);
+
+22 }
+
+23
+
+24
+
+After you've saved your changes, build and run the code. Despite this, the software continues to generate 100 random integers in ten rows and ten columns. However, you may easily adjust it to twenty rows of seven columns presently. To make that modification, all you have to do is alter the constants.
+
+1 #include <stdio.h>
+
+2 #include <stdlib.h>
+
+3 #include <time.h>
+
+4
+
+5 #define ROWS 20
+
+6 #define COLUMNS 7
+
+7
+
+8 int main()
+
+9 {
+
+10 int row, column;
+
+11
+
+12 srand((unsigned)time(NULL));
+
+13
+
+14 for(row=0;row<ROWS;row++)
+
+15 {
+
+16 for(column=0;column<COLUMNS;column++)
+
+17 printf(“%2d\t”,rand() % 100);
+
+18 putchar(‘\n’);
+
+19 }
+
+20
+
+21 return(0);
+
+22
+
+23
+
+24 }
+
+To retrieve the correct numbers, you won't have to comb through a lot of code. Constants can help you save time in this way. Save, compile, and execute the code. You now have seven columns of twenty rows, as you can see from the output. The sample code below shows another example of using constants:
+
+1 #include <stdio.h>
+
+2
+
+3 #define INPUT_MAX 64
+
+4
+
+5 int main()
+
+6 {
+
+7 char input[INPUT_MAX];
+
+8
+
+9 printf(“Instructions: “);
+
+10 fgets(input,INPUT_MAX,stdin);
+
+11 puts(“Thank you! Here are your instructions:”);
+
+12 puts(input);
+
+13
+
+14 return(0);
+
+15 }
+
+16
+
+17
+
+This code is an update to a previous chapter's example. The INPUT MAX constant defined on line 3 determines the maximum number of characters that can be entered. At line 7, the constant is used to specify the buffer size, then again at line 10 with the fgets function.
+
+The advantage is that by changing the INPUT MAX constant, you can adjust both values at once. You don't have to go through the code to find what you're looking for. Take a look at the following code:
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 float a;
+
+6 float b = 5.0;
+
+7
+
+8 printf(“Input a number: “);
+
+9 scanf(“%f”,&a);
+
+10 printf(“%f / %f = %f\n”,a,b,a/b);
+
+11
+
+12 return(0);
+
+13 }
+
+14
+
+15
+
+This is also a variation on a previous example from a previous chapter. To help you remember what the problem was, build and run the code. The placeholders in the print statement can be adjusted to solve the problem. Insert.1 inside each percent f placeholder on line 10 so that they read:
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 float a;
+
+6 float b = 5.0;
+
+7
+
+8 printf(“Input a number: “);
+
+9 scanf(“%f”,&a);
+
+10 printf(“%.1f / %.1f = %.1f\n”,a,b,a/b);
+
+11
+
+12 return(0);
+
+13 }
+
+14
+
+15
+
+After you've saved your changes, build and run the code. The.1 format restricts floating-point output to a single digit after the decimal point. Edit it again, and in the print statement, type.3 for the format.
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 float a;
+
+6 float b = 5.0;
+
+7
+
+8 printf(“Input a number: “);
+
+9 scanf(“%f”,&a);
+
+10 printf(“%.3f / %.3f = %.3f\n”,a,b,a/b);
+
+11
+
+12 return(0);
+
+13 }
+
+14
+
+15
+
+Save, compile, and execute the code. After the decimal point, three digits appear. Let's look at our previous CONSTANT example once more:
+
+1 #include <stdio.h>
+
+2 #include <stdlib.h>
+
+3 #include <time.h>
+
+4
+
+5 #define ROWS 20
+
+6 #define COLUMNS 7
+
+7
+
+8 int main()
+
+9 {
+
+10 int row, column;
+
+11
+
+12 srand((unsigned)time(NULL));
+
+13
+
+14 for(row=0;row<ROWS;row++)
+
+15 {
+
+16 for(column=0;column<COLUMNS;column++)
+
+17 printf(“%2d\t”,rand() % 100);
+
+18 putchar(‘\n’);
+
+19 }
+
+20
+
+21 return(0);
+
+22 }
+
+23
+
+24
+
+Between the percent and the letter ‘d,' on line 17, there is a two between the percent and the letter ‘d.' The 2 specifies a minimum output width of two characters. They'll write a line when a single-digit arrives in the output. Could you make a copy of the code and execute it? Look at how the output lines up with singular digits.
+
+Remove the two from the code once more. Save, compile, and execute the code. The single digits now don't appear to be correct. Nobody anticipates them lining up in the tens column. There are numerous possibilities for the placeholders. Between the % sign and their letter, these can be sandwiched. We could write thousands of chapters to cover them all, but one to consider is percent s, which can be found in the code below:
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 char right[]
+
+6 char left[] =
+
+7
+
+8 printf(“%20s\n”,right);
+
+9 printf(“%-20s\n”,left);
+
+10
+
+11 return(0);
+
+12
+
+13
+
+14 }= “right”; “left”;
+
+Percent s placeholders are used to display the two strings, RIGHT, and LEFT. Between the % and the s, however, there are extra characters. Like the 2 in between percent d in the preceding example, the 20 indicates an output width.
+
+The percent 20s right justify the output in line 8, altering the string's position based on its length inside that width. The negative sign before the 20 left justifies the string in line 9, which is how text is often displayed. To see how this code works, build it, and execute it.
+
+The percent s placeholder's width option sets the width to twenty characters. This area is perfect for showing tables and lists. There are many additional widths, precision, padding, and other placeholder choices available. The print function's documentation includes several options as well as a few examples.
+
+
+
+
+
+Chapter 10
+
+
+
+C language Arrays
+
+
+
+An array is essentially a collection of many variables of the same type. A list of high scores, for example, is a form of an array, as is the number of miles you run per day, even if the list contains a lot of zeros. Strings in the C programming language are, of course, an array of single-character variables.
+
+The concept of an array is introduced in this section. You'll learn how to make an array, how to fill it with data, and how to access it. We'll also reveal some mysteries concerning character arrays, often known as strings. Four different float variables are created and filled with data in the code below, demonstrating how NOT to do multiple values in your code:
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5
+
+6
+
+7 temp1 = 84.9;
+
+8 temp2 = 83.7;
+
+9 temp3 = 85.8;
+
+10 temp4 = 88.2;
+
+11
+
+12 printf(”Local temperatures:\n”);
+
+13 printf(“Station 1: %.1f\n”,temp1);
+
+14 printf(“Station 2: %.1f\n”,temp2);
+
+15 printf(“Station 3: %.1f\n”,temp3);
+
+16 printf(“Station 4: %.1f\n”,temp4);
+
+17
+
+18 return(0);
+
+19
+
+20 }
+
+21
+
+22
+
+Four different print statements are then used to display them. Each variable necessitates its own set of repeated statements. This code can be built and run, but why bother? Instead, we'll teach you how to deal with numerous variables of the same type in a more efficient manner. The array is arranged in this manner. Take a look at the following code:
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 float temps[4] = { 84.9, 83.7, 85.8, 88.2 };
+
+6 int x;
+
+7
+
+8 printf(“Local temperatures:\n”);
+
+9 for(x=0;x<4;x++)
+
+10 printf(“Station %d: %.1f\n”,x,temps[x]);
+
+11
+
+12 return(0);
+
+13 }
+
+14
+
+15
+
+The previous example has been rewritten as an array. In line 5, the array temperatures are constructed. There are four in all.
+
+Each element is given a name in the brackets that follow. A single print function is used in the loop at line 9 to display the values of all four elements.
+
+
+
+
+
+Anatomy of an Array
+
+
+
+An array is nothing more than a collection of variables of the same type. It has a similar declaration to any other variable, except that the variable name is enclosed in square brackets. The brackets indicate the number of elements in the array. If the elements are supplied when the array is declared, they can be left blank. DELIVERIES, a fifteen-element integer array, is shown below.
+
+int deliveries[15];
+
+Integer array TOTALS has three elements, which are assigned in curly brackets.
+
+int totals[] = { 5, 13, 6 };
+
+There is no comma in the final element. If you place a comma there, the compiler assumes you've left something out. You can also list individual array elements on a single line. Except for the last element, remember to use commas. Close the curly bracket and finish with a semi-colon.
+
+Each array element is a variable in and of itself. You give the element between the square brackets. The first is the zeroth element. An integer variable can also be used to provide array elements. In the following example, variable n represents a specific entry in the totals array:
+
+print (“%d\n”,totals[n]);
+
+The element is utilized in the same way that any other variable is. It can be found within a print function or used with an assignment operator, as shown below:
+
+totals[n] = 14;
+
+After an array has been declared, you can't change the number of elements in it. There are a few ways that can be used to get past this restriction. Accept it as a rule for the time being. Also, keep in mind that an array's first element is zero, not one.
+
+Humans begin numbering at one, while the C language begins counting at zero. The following code declares an integer array CALORIES at line 7:
+
+1 #include <stdio.h>
+
+2
+
+3 #define MEALS 3
+
+4
+
+5 int main()
+
+6 {
+
+7 int calories[MEALS];
+
+8 int x,total;
+
+9
+
+10 total = 0;
+
+11 puts(“Calorie Counter”);
+
+12 for(x=0;x<MEALS;x++)
+
+13 {
+
+14 printf(“Calories
+
+15 scanf(“%d”,&calories[x]);
+
+16 total = total +calories[x];
+
+17 }
+
+18 printf(“You had a total of %d calories.\n,” total);
+
+19
+
+20 return(0);
+
+21
+
+22
+
+23 }at meal %d: “,x+1);
+
+In line 3, the MEALS element is present, and the MEALS constant is set to 3. At line 12, a for loop reads in three values. Take note of how the for loop begins at zero. When working with arrays, this is useful because the initial element is zero.
+
+However, in line 14, 1 is added to the looping variable x, making the numbers more palatable to running the program. In line 15, the scan command reads the values into each array entry. The ampersand is essential since an array element is a single variable.
+
+The value input is added to the total variable at line 16. Now you may compile and run the code. To double-check the computer's calculations, enter some simple numbers. In line 10, you'll notice that the variable total has been set. That is necessary. Otherwise, the variable could be filled with junk. Variables in C aren't initialized unless they're given a value.
+
+To demonstrate this, comment outline 10. To see if the code has any effect, save, build, and execute it. The number is incorrect because the total variable has not been correctly initialized. There's a chance it's correct because a random number may be zero, which would result in 600 being displayed.
+
+Character arrays are what strings are. Normally, double quotes are used to declare them. Take a look at the following code:
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 char text[] = “I am a string!”;
+
+6
+
+7 puts(text);
+
+8
+
+9 return(0);
+
+10 }
+
+11
+
+12
+
+Line 5 declares the character array TEXT. This is one of the simplest methods for declaring a string or a character array. Take a look at the following code:
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 char text[] = {
+
+6 ‘I,’ ‘‘‘a’, ‘m’, ‘‘‘a’, ‘‘
+
+7 ‘s,’ ‘t’, ‘r,’ ‘i’, ‘n,’ ‘g,’ ‘!’, ‘\0’
+
+8 };
+
+9
+
+10 puts(text);
+
+11
+
+12 return(0);
+
+13 }
+
+14
+
+15
+
+This code works the same as the previous exercise, but the character array is declared character-by-character, a phenomenal waste of time. Build and run the code. It works, but it is just too much effort.
+
+However, the code does point out the final character in all C language strings that must be specified: the null character. It is shown in the previous code as the escape sequence ‘\0.’ When you use double quotes
+
+To declare a string, the compiler automatically adds the null for you. But when you specify one character at a time, you must remember to add the null.
+
+The null comes in handy when you display a string one character at a time. Take a look at the code below:
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 char hello[] = “Greetings, human!\n”;
+
+6 int n;
+
+7
+
+8 n = 0;
+
+9 while( hello[n] != ‘\0’)
+
+10 {
+
+11 putchar(hello[n]);
+
+12 n++;
+
+13 }
+
+14
+
+15 return(0);
+
+16 }
+
+17
+
+18
+
+This code displays the hello array's string one character at a time. The while loop iterates through the string until it reaches the null character. As it continues, it spits out single characters by incrementing variable n. Make a copy of the code and execute it.
+
+Because the null character in the C language evaluates to the false condition, you can condense the while decision to:
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 char hello[] = “Greetings, human!\n”;
+
+6 int n;
+
+7
+
+8 n = 0;
+
+9 while( hello[n]
+
+10 {
+
+11 putchar(hello[n]);
+
+12 n++;
+
+13
+
+14
+
+15 return(0);})
+
+16 }
+
+17
+
+18
+
+Save, build, and run your code after you've made that change. The output is the same, as you can see. However, the source code is a little less understandable for a beginner programmer. In the C programming language, an array is just a collection of variables of the same type marching off together. However, not every piece of data is a single line. There are instances when you must work with a grid. In such an instance, you've entered the multi-dimensional array realm.
+
+
+
+
+
+Multi-dimensional Arrays
+
+
+
+This section delves into the multi-dimensional array's enigma. You'll learn how to set up an array like this and access its contents. You'll also learn about multi-dimensional arrays and how they relate to strings. Consider a grid to visualize a multi-dimensional array—it has rows and columns. Take a look at the following code:
+
+1 #include <stdio.h>
+
+2
+
+3 #define ROWS 4
+
+4 #define COLUMNS 4
+
+5
+
+6 int main()
+
+7 {
+
+8 int grid[ROWS] [COLUMNS];
+
+9 int x,y;
+
+10
+
+11 /* initialize the array */
+
+12 f0r(x=0;x<ROWS;x++)
+
+13 for(y=0;y<COLUMNS;y++)
+
+14 grid[x] [y] = 0;
+
+15
+
+16 /* display the grid */
+
+17 for(x=0;x<ROWS;x++)
+
+18 {
+
+19 for(y=0;y<COLUMNS;y++)
+
+20 printf(“%d.%d: %d\t”,x,y,grid[x] [y]);
+
+21 putchar(‘\n’);
+
+22 }
+
+23
+
+24 return(0);
+
+In line 8, the array is declared. In the array, there are two sets of square brackets, one for each dimension. As a result, the grid is an array of integers. It's a two-dimensional array in effect. Lines 12–14 employ a nested loop to fill each array element, with the value zero serving as the array's initializer.
+
+Individual array elements require two square brackets as references, as shown in line 14. Consider each as a set of rows and columns. Then, starting at line 17, the nested loops output the array in rows and columns. Make a copy of the code and execute it.
+
+Each array element is shown as it would be referred to in the output. The element '0.0' is the first. In both orientations, this is the initial element. How would you adapt the code to set the value of the third element in both dimensions to 1 as a thought experiment?
+
+We hope you recall that arrays begin with the zeroth element. Grid ‘2.2' is the name given to the third element. We'll add a line that says, "grid 2.2 = 1."
+
+1 #include <stdio.h>
+
+2
+
+3 #define ROWS 4
+
+4 #define COLUMNS 4
+
+5
+
+6 int main()
+
+7 {
+
+8 int grid[ROWS] [COLUMNS];
+
+9 int x,y;
+
+10
+
+11 /* initialize the array */
+
+12 f0r(x=0;x<ROWS;x++)
+
+13 for(y=0;y<COLUMNS;y++)
+
+14 grid[x] [y] = 0;
+
+15
+
+16 grid[2] [2] = 1;
+
+17 /* display the grid */
+
+18 for(x=0;x<ROWS;x++)
+
+19 {
+
+20 for(y=0;y<COLUMNS;y++)
+
+21 printf(“%d.%d: %d\t”,x,y,grid[x] [y]);
+
+22 putchar(‘\n’);
+
+23 }
+
+24
+
+25 return(0);
+
+Save your modifications before building and running the code. At grid 2.2, this is how the value looks with the value 1. As seen in the code below, you can also create a two-dimensional character array:
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 char names[4] [7] = {
+
+6 “Mickey”,
+
+7 “Minnie”,
+
+8 “Goofy,”
+
+9 “Pluto”,
+
+10 };
+
+11 int x;
+
+12
+
+13 for(x=0;x<4;x++)
+
+14 printf(“%s\n”,names[x]);
+
+15
+
+16 return(0);
+
+17 }
+
+18
+
+19
+
+A two-dimensional character array is nothing more than a collection of strings, with one critical caveat: the array must be large enough to hold the most significant string. A two-dimensional array is a grid, so keep that in mind. The most significant string here is six letters long, plus one null character element. For each string, that's a total of seven elements.
+
+You just need to specify the first dimension when printing strings from a two-dimensional character array, which is done online 14. Make a copy of the code and execute it. The C programming language also supports three-dimensional arrays, as well as arrays with even more dimensions. You'll need one set of brackets for each dimension when making such an array. Things can quickly become complicated. Concentrate on two-dimensional arrays for the time being.
+
+As a side note, believe it or not, if you're looking for a unique way to express yourself, you've been reading this book from the beginning. You already know everything you need to know to program a basic Tick-Tack-Toe computer game. It's worth a shot.
+
+
+
+
+
+Chapter 11
+
+
+
+
+
+C Language Structures
+
+
+
+The structure is another variable type in the C programming language. It's essentially a collection of different variable types that have been combined into a single unit. A structure variable is similar to a database record in that it has several sections. This chapter introduces the structural notion. You'll learn how to construct structure variables and access structure members, as well as how to build up a structure.
+
+We'll go through how to populate a structure with data, as well as the intriguing concept of nesting structures. Of course, the code below isn't complete, but it demonstrates how to create a structure in the C programming language.
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 struct record {
+
+6 int account;
+
+7 float balance;
+
+8 };
+
+9
+
+10 return(0);
+
+11 }
+
+12
+
+13
+
+The keyword struct precedes the structure's name. The name in this case record.' Because the whole thing is a statement, the structural elements are enclosed in curly brackets, each terminating with a semi-colon. Variable declarations make up the structural members. You'll find an int and a float member inside this structure. ‘account' is the name of the int member. Balance is the name of the float member.
+
+The structured declaration produces a new type of structure, similar to a new type of variable in the code, by itself. To use the structure, you must declare a structure type variable. We're going to type the following on line 9:
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 struct record
+
+6 int account;
+
+7 float balance;
+
+8 };
+
+9 struct record my_bank;
+
+10 {
+
+11 return(0);
+
+12 }
+
+13
+
+14
+
+This statement generates a record structure type variable named my bank. You must refer to both the variable name and the member name to access the structure's members. Let's add two more lines to the equation. The structure variable name is listed first, followed by a dot, and finally, the member name. They must be given values that are the same as the variable type. An integer and a floating-point value are used in this scenario.#include <stdio.h>
+
+1
+
+2 int main()
+
+3 {
+
+4 struct record
+
+5 int account;
+
+6 float balance;
+
+7 };
+
+8 struct record my_bank;
+
+9
+
+10 my_bank.account = 123456;
+
+11 my_bank.balance = 6543.21;
+
+
+
+12
+
+13 return(0);
+
+14
+
+15
+
+16 }{
+
+Save your modifications before building and running the code. Simply echo the existing commands to create a new record structure variable called your bank. Alternatively, you may replicate the previous sentences and replace ‘my bank' with ‘your bank' to populate the members in that structure.
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 struct record {
+
+6 int account;
+
+7 float balance;
+
+8 };
+
+9 struct record my_bank;
+
+10 struct record your_bank;
+
+11
+
+12 my_bank.account = 123456;
+
+13 my_bank.balance = 6543.21;
+
+14 print(“In account %d I have %.2f\n”,my_bank.account,my_bank.balance)
+
+15
+
+16 return(0);
+
+17 }
+
+18
+
+19
+
+You might alternatively store the data within the structure. Take a look at the following code:
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 struct person
+
+6 char
+
+7 int age;
+
+8 };
+
+9 struct person president
+
+10 “George Washington,”
+
+11 67
+
+12 };
+
+13
+
+14 printf(“%s was %d years old\n”,president.name,president.age);
+
+15
+
+16 return(0);
+
+17
+
+18
+
+19 }{name[32];= {
+
+A structure named person is declared in this code. In line 9, a person type variable is declared. 'President' is the name given to it. Values are instantly assigned to the president structural variable. The values are contained in curly brackets and match the structure member types. To make sure this code works, run it.
+
+It's worth noting how you assign a string to a structural component in the structure. Take a look at the following code:
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 struct person
+
+6 char
+
+7 int age;
+
+8 };
+
+9 struct person president;
+
+10 {name[32];
+
+11 president.name = “George Washington”;
+
+12 president.age = 67;
+
+13
+
+14 printf(“%s was %d years old\n”,president.name,president.age);
+
+15
+
+16 return(0);
+
+17 }
+
+18
+
+19
+
+It's fantastic if you can figure out what's wrong. Otherwise, compile the code and look for the exact error in the build log. It is, as you can see, incompatible. With a string, you can't use the assignment operator. This is because strings are not variables. Arrays are what they are. Here's how to deal with it:
+
+1 #include <stdio.h>
+
+2 #include <string.h>
+
+3
+
+4 int main()
+
+5 {
+
+6 struct person
+
+7 char
+
+8 int age;
+
+9 };
+
+10 struct person president;
+
+11
+
+12 strcpy(president.name,”George
+
+13 president.age = 67;
+
+14
+
+15 printf(“%s was %d years old\n”,president.name,president.age);{name[32];Washington”);
+
+16
+
+17 return(0);
+
+18 }
+
+19
+
+20
+
+It now works. Any variable type—even another structure—can be included into a C language structure. Take a look at the following code:
+
+1 #include <stdio.h>
+
+2 #include <string.h>
+
+3
+
+4 int main()
+
+5 {
+
+6 struct date {
+
+7 int year;
+
+8 int month;
+
+9 int day;
+
+10 };
+
+11 struct person {
+
+12 char name[32];
+
+13 struct date birthday;
+
+14 };
+
+15 struct person friend;
+
+16
+
+17 strcpy(friend.name,”Anita Mann”);
+
+18 friend.birthday.year = 1975;
+
+19 friend.birthday.month = 6;
+
+20 friend.birthday.day = 1;
+
+21
+
+22 printf(“My friend %s was born on %d/%d/%d\n”,
+
+23 friend.name,
+
+24 friend.birthday.month,
+
+25 friend.birthday.day,
+
+26 friend.birthday.year);
+
+27
+
+28 return(0);
+
+29 }
+
+30
+
+There are definitions for two structures in this code. Line 6 defines the first, which is the date. It keeps track of members by year, month, and day. In line 11, the second structure, person, is declared. It has a named array as well as a birthday variable that holds the date structure.
+
+Line 15 declares a person variable structure friend. Lines 17 through 20 create a friend variable, which is then assigned using strcpy. Note how two dots are utilized to fill in the substructure members in lines 18, 19, and 20 for the structure member birthdate. That's how it's done. Structures within structures are referred to in this manner. Create and run this program.
+
+Most programmers, by the way, will define a structure before creating a structure variable in the same sentence. This can be done at line 14. At the end of line 14, specify the variable name buddy, then delete line 15.
+
+1 #include <stdio.h>
+
+2 #include <string.h>
+
+3
+
+4 int main()
+
+5 {
+
+6 struct date {
+
+7 int year;
+
+8 int month;
+
+9 int day;
+
+10 };
+
+11 struct person {
+
+12 char name[32];
+
+
+
+13 struct date birthday;
+
+14 } friend;
+
+15
+
+16 strcpy(friend.name,”Anita Mann”);
+
+17 friend.birthday.year = 1975;
+
+18 friend.birthday.month = 6;
+
+19 friend.birthday.day = 1;
+
+20
+
+21 printf(“My friend %s was born on %d/%d/%d\n”,
+
+22 friend.name,
+
+23 friend.birthday.month,
+
+24 friend.birthday.day,
+
+25 friend.birthday.year);
+
+26
+
+27 return(0);
+
+28 }
+
+29
+
+30
+
+After you've saved your changes, build and run the code. The result is identical. When coding in C, it is preferable not to utilize this shortcut because it makes the code less understandable. However, you are allowed to use it, as it appears regularly in other C scripts.
+
+
+
+
+
+Chapter 12
+
+
+
+C Language Time Functions
+
+
+
+We have yet to come across a programmable gadget that does not contain an internal clock. The computer has a clock, and current computers can keep exact time thanks to the Internet. When your code requires access to that data, you use the time functions available in the C language library.
+
+In this chapter, you'll learn how to use time functions in the C programming language. You'll learn how to read time values, verify the time, and obtain data about the current date. The direct value generated by the time function is used in the following code, as evidenced by the second parameter in the print function at line 6:
+
+1 #include <stdio.h>
+
+2 #include <time.h>
+
+3
+
+4 int main()
+
+5 {
+
+6 printf(“The current time is %ld\n”,time(NULL));
+
+7
+
+8 return(0);
+
+9 }
+
+10
+
+11
+
+You'll notice that the placeholder is "percent ld," which is a large integer. The kind of value returned by the time function is this. The time function itself necessitates the use of an argument. To keep the function happy, we use the NULL pointer constant in our example. The inclusion of time is also pleasing to the compiler. Line 2 of the h header file Create and run this program.
+
+It's the Unix Epoch time. Since January 1st, 1970, how many seconds have passed? The number will need some work to be relevant to a human person. The value returned by the time method is usually stored. Although the value is a long integer, the variable type is ‘time t.'
+
+To declare the variable as a time t type, add a new line to the code. The new variable must be specified as an argument in the time function to be assigned a value. That is, in fact, backward. However, other functions, including scanf, work in this manner. The variable must be prefixed with an ampersand, just like scanf. The variable should now appear as the second parameter in the print statement.
+
+1 #include <stdio.h>
+
+2 #include <time.h>
+
+3
+
+4 int main()
+
+5 {
+
+6 time_t (&now);
+
+7
+
+8 time(&now);
+
+6 printf(“The current time is %ld\n”,now);
+
+7
+
+8 return(0);
+
+9 }
+
+10
+
+11
+
+Save your modifications before building and running the code. The time is still displayed as a large amount, but it also indicates that you still have time to finish this chapter. Moving on, the C library has a method for converting time t values to strings. The time function is what it's named.
+
+Change the second argument of the printf function in the previous code to &ctime. Replace percent ld with percent s in the placeholder. Because the time function returns a string, this must be done.
+
+1 #include <stdio.h>
+
+2 #include <time.h>
+
+3
+
+4 int main()
+
+5 {
+
+6 time_t now;
+
+7
+
+8 time(&now);
+
+6 printf(“The current time is %s\n”,ctime(&now));
+
+7
+
+8 return(0);
+
+9 }
+
+10
+
+11
+
+Save, compile, and execute the code. The current date and time are displayed. You'll see a different time unless you're reading this chapter right now. You must use the local time function if you want to get precise time values. The address of a structure that holds specific time values like the day, month, week, hour, and so on is returned by this function. Take a look at the following code:
+
+1 #include <stdio.h>
+
+2 #include <time.h>
+
+3
+
+4 int main()
+
+5 {
+
+6 time_t now;
+
+7 struct tm *right
+
+8
+
+9 time(&now);
+
+10 right_now = localtime(&now);
+
+11 printf(“Today is %d/%d at %d:%d\n”,_now;
+
+12 right_now->tm_mon,
+
+13 right_now->tm_mday,
+
+14 right_now->tm_hour,
+
+15 right_now->tm_min );
+
+16
+
+17 return(0);
+
+18 }
+
+19
+
+20
+
+Line 10's local time function populates a structure with helpful information about the current time. In line 7, the structure is declared. It's a pointer variable, as you'll see later in the chapter. The local function uses the current time value received at line 9. This populates the ‘right now' structure.
+
+The print statement, which begins at line 11, displays some of the information available in the structure. To make the arguments more readable, we separated them into different lines. However, lines 12 to 15 form a single statement. The C programming language ignores extra spaces. The right now structure contains four values: the month, the day of the month, the hour, and the minutes. The right now structure contains all of these members.
+
+
+
+The period structure member operator isn't used here, as you can see. The member operator '->' is used for structure pointer variables. Make a copy of the code and execute it. You may now observe that the month value is incorrect. That's because C starts counting at zero, and January is the first month of the year.
+
+You can solve this code by adding 1 to the right now structure's value return. Other modifications are also possible. If the time is less than ten minutes past the hour, it is displayed as a single number. Add ‘02' to the percent d placeholder to fix this. The integer's output width is increased by two places using this option. When the output is only one digit long, it will also prefix a zero.
+
+1
+
+#include <stdio.h>
+
+2 #include <time.h>
+
+3
+
+4 int main()
+
+5 {
+
+6 time_t now;
+
+7 struct tm *right
+
+8
+
+9 time(&now);
+
+10 right_now = localtime(&now);
+
+
+
+11 printf(“Today is %d/%d at %d:%02d\n”,
+
+12 right_now->tm_mon+1,
+
+13 right_now->tm_mday,
+
+14 right_now->tm_hour,
+
+15 right_now->tm_min );
+
+16
+
+17 return(0);
+
+18 }_now;
+
+19
+
+20
+
+After you've saved your changes, build and run the code.
+
+
+
+
+
+Chapter 13
+
+
+
+C Language Variables
+
+
+
+A variable is a container for data of some kind. That container in C holds an integer, a floating-point character, or some other value. But, in terms of philosophy, what exactly is a variable? We'll walk you through the notion of the variable in this chapter. You'll learn how to describe variables in various ways, as well as how to calculate their magnitude and store them.
+
+You learned two things about the variable in a typical C language variable declaration: its type and name. An integer variable is declared as follows:
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 int a;
+
+6
+
+7 printf(“The value of a is %d\n”,a);
+
+8
+
+9 return(0);
+
+10 }
+
+11
+
+12
+
+Its name is a, and it is an integer variable called int. The variable is either uninitialized or has never had a value given to it. Even so, as seen in line 7, you can utilize it in the code. Create and execute this program. You may see any random value on your end. C does not initialize variables when they are declared, unlike other programming languages. The program allows a piece of memory to store the variable's data internally.
+
+That chunk hasn't been set to zero and hasn't been initialized. It's only a recollection of a spot. Whatever value is currently present in your variable is immediately absorbed by it, as indicated in your output. The story concludes that variables that can make or break a project must always be initialized before being used. You may fix the preceding code by adding the following line:
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 int a;
+
+6
+
+7 a = 65;
+
+8 printf(“The value of an is percent dn”,a); printf(“The value of an is percent dn”, a); print (“The value of a
+
+9
+
+10 return(0);
+
+11 }
+
+12
+
+13
+
+Save your modifications before building and running the program. Now, the output is predictable. You also know something else about the variable: its value. Two additional tidbits about the variable can be obtained by using special C language operators. The first is the size of the operator.
+
+Size is a keyword, but it is considered an operator. What it does is to return how many bytes of storage is used by a specific variable. That information may seem trivial, but it does come into play often in the C language. Take a look at the code below:
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 int a;
+
+6
+
+7 printf(“An int variable occupies %lu bytes of storage\n”,sizeof(a));
+
+8
+
+9 return(0);
+
+10 }
+
+11
+
+12
+
+The variable isn't set up yet. But that isn't a problem because it isn't in use. The print command employs the size of the operator. Variable an is evaluated as an int variable by the size of operation, which returns the storage space it takes up. The size of the operation returns an unassigned integer value of a long length. The percent lu placeholder is necessary for that value. Make a copy of the code and execute it.
+
+An integer on this system takes up 4 bytes of storage. That's the way things are nowadays. An integer, on the other hand, only took up two bytes of storage 20 years ago. In the code at line 5 and the printf function at line 7, change int to char. Save, compile, and execute the code.
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 char a;
+
+6
+
+7 printf(“A char variable occupies %lu bytes of storage\n”,sizeof(a));
+
+8
+
+9 return(0);
+
+10 }
+
+11
+
+12
+
+A single byte is all that is required to store a character. Change the variable type to float and see how big it is.
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 float a;
+
+6
+
+7 printf(“A float variable occupies %lu bytes of storage\n”,sizeof(a));
+
+8
+
+9 return(0);
+
+10 }
+
+11
+
+12
+
+Save, compile, and execute the code. A floating-point variable takes up 4 bytes of storage on this system. A long integer, often known as a long int value, is a type of integer that can store huge numbers. Change float to long in the code to see how big it is.
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 long a;
+
+6
+
+7 printf(“A long variable occupies %lu bytes of storage\n”,sizeof(a));
+
+8
+
+9 return(0);
+
+10 }
+
+11
+
+12
+
+Save, compile, and execute the code. A long integer takes up 4 bytes of storage on this system, which is the same as a standard integer. However, on some systems, an enormous integer value may occupy up to 8 bytes of storage. A double value, on the other hand, has twice the precision of afloat. In the code, change long to double.
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 double a;
+
+6
+
+7 printf(“A double variable occupies %lu bytes of storage\n”,sizeof(a));
+
+8
+
+9 return(0);
+
+10 }
+
+11
+
+12
+
+Save, compile, and execute the code. The double integer takes up 8 bytes of storage in this case. You don't have to update the placeholder for any of these re-declarations, by the way. That's because the size of the operation, not the variable itself, returns the long, unsigned integer value.
+
+The memory location of a variable is another piece of information you can acquire. This shows you exactly where the data for the variable—those 1, 4, or 8 bytes of storage—is stored. Use the ampersand operator to get the memory address of a variable.
+
+This operator has already been utilized in the scanf and time functions in previous chapters. Take a look at the following code:
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 int a;
+
+6 char b;
+
+7 float c;
+
+8
+
+9 puts(“Memory location:”);
+
+10 printf(“A is at %p\n”,&a);
+
+11 printf(“B is at %p\n”,&b);
+
+12 printf(“C is at %p\n”,&c);
+
+13
+
+14 return(0);
+
+15 }
+
+16
+
+17
+
+This code declares three variables: an integer, a character, and a floating-point value. Because these variables aren't used, they aren't initialized. However, the application does set aside memory for them in several areas. The ampersand is prefixed to the variable name to access those places. Use the percent p placeholder in the print statement to display the address, as shown in lines 10, 11, and 12. Create and run this program.
+
+Machine to machine, the address output values will differ. On different computers and operating systems, their format will look different as well. The information may appear insignificant at this time. It does, however, play a significant part when it comes to pointers, which are possibly the most terrifying and feared aspect of the C language.
+
+Many C programmers spend their careers deftly avoiding pointers, which are technically viable but inefficient.
+
+
+
+
+
+Chapter 14
+
+
+
+C Language Pointers
+
+
+
+The use of pointers is perplexing. However, we hope that this section clarifies things for you. We'll talk about what a pointer is and how to use one. We'll take it slow and steady because this is a crucial component of learning the C programming language.
+
+The name of pointers is the worst thing about them. Pointers. It's descriptive, but it's a bad option because you'll find yourself explaining what a pointer is by stating, "A pointer, points." That's a waste of time. However, because we cannot change the name, please enable us to explain a pointer by providing the following definition: A pointer is a variable that stores the address of a memory region.
+
+There isn't just any address here. You can't say, "Let's see what's at memory location 96," for example. That is not how pointers work. Another variable's location must be specified as the address. Although the variable name is prefixed with the pointer operator asterisk ‘ *, 'pointer variables are defined similarly to other variables.
+
+The type of the pointer variable corresponds to the kind of variable it refers to. An int variable, for example, necessitates an int pointer. Before they can be utilized, pointer variables must be initialized. This holds for all variables in the C programming language, but it is especially true for pointers. When a pointer isn't initialized, a variety of strange problems can occur.
+
+
+
+
+
+Pointers must be initialized before they can be used. The following code is identical to one from a previous chapter:
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 int pokey;
+
+6
+
+7 printf(“The address of ‘pokey’ is %p\n,” &pokey);
+
+8
+
+9 return(0);
+
+10 }
+
+11
+
+12
+
+The variable'pokey's address is retrieved using the ampersand operator. That address is displayed in the percent p placeholder. Add the p variable, which is an integer pointer. Remember that a pointer is a variable that stores the address of a memory location. The ampersand operator is used to obtain that address. Because that is already utilized in this code, you should figure it out on your own. However, we'll populate the variable p for you at line 8, just in case.
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 int pokey;
+
+6 int *p;
+
+7
+
+8 p = &pokey;
+
+9 printf(“The address of ‘pokey’ is %p\n,” &pokey);
+
+10
+
+11 return(0);
+
+12 }
+
+13
+
+14
+
+The statement assigns the p pointer variable the address of variable ‘pokey' at line 8. You could be perplexed at this point. “Where is the asterisk in front of the p?” you might wonder. In a moment, we'll respond to that query. But, for now, keep in mind that a pointer is a variable that stores the position of a memory region. That memory address is for the ‘pokey' variable in this case.
+
+Replicate the printf statement now. Replace &pokey with the pointer variable p this time.
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 int pokey;
+
+6 int *p;
+
+7
+
+8 p = &pokey;
+
+9 printf(“The address of ‘pokey’ is %p\n,” &pokey);
+
+10 printf(“The address of ‘pokey’ is %p\n”,p);
+
+11
+
+12 return(0);
+
+13 }
+
+14
+
+15
+
+Before constructing and running the code, save your changes. As you can see, both lines produce the same address. One of them is the ampersand-acquired address of variable pokey. The address, which is stored in the pointer variable p, is the other.
+
+
+
+
+
+Dual Nature of Pointers
+
+
+
+While an asterisk is used to declare the pointer variable, it is not always used that way. The pointer variable represents a memory location without the asterisk. The asterisk symbolizes the value at that place, and the pointer represents that value. This is due to the pointer variable's dual nature. It's something that can be perplexing for a long time. The following code is similar to the previous example, but we've set the value of the ‘pokey' variable to 987:
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 int pokey;
+
+6 int *p;
+
+7
+
+8 pokey = 987;
+
+9 p = &pokey;
+
+10
+
+11 printf(“The address of ‘pokey’ is %p\n,” &pokey);
+
+12 printf(“The contents of ‘pokey’ are %d\n,” pokey);
+
+13
+
+14 printf(“The address of ‘pokey’ is %p\n”,p);
+
+15 printf(“The contents of ‘pokey’ are %d\n,”*p);
+
+16
+
+17 return(0);
+
+18 }
+
+19
+
+20
+
+The address and value of the ‘pokey' variable are displayed using two printf instructions. The first set makes direct use of the word ‘pokey.' The second set makes use of the p pointer variable. Line 14 uses p without the asterisk, indicating that it is a memory location. The asterisk at line 15 causes p to peek at the contents of that memory address. Create and run this program.
+
+As you can see, the pointer variable p faithfully reports both the address and the contents. “Why to bother?” is a reasonable question at this point. ” Using a pointer at this level is very "pointless." You can do many things in C without using pointers, but they do serve a function. Many functions assume you understand and are familiar with how pointers work.
+
+
+
+
+
+Array Manipulation Using Pointers
+
+
+
+When dealing with arrays, pointers become extremely useful. After all, in the C programming language, there is no such thing as an array. Arrays are just a fancy way of saying pointers. To demonstrate this, we'll examine a popular C language array in this section. We'll show you how to manage an array with pointers, giving you freedom and power that other programming languages can only dream about.
+
+1 #include <sdtio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 int array[] = { 11, 13, 17, 19 };
+
+
+
+6 int x;
+
+7
+
+8 for(x=0;x<4;x++)
+
+9 {
+
+10 printf(“Element %d: %d\n”,x+1,array[x]);
+
+11 }
+
+12
+
+13 return(0);
+
+14 }
+
+15
+
+16
+
+The code shown above is straightforward. The values of an array are assigned after it is declared. A for loop iterates over each element, displaying the value of each one. Take a look at the following code:
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 int array[] = { 11, 13, 17, 19 };
+
+6 int x;
+
+7 int *aptr;
+
+8
+
+9 aptr = array; /*no & needed for an array */
+
+10
+
+11 for(x=0;x<4;x++)
+
+12 {
+
+13 printf(“Element %d: %d\n”,x+1,*aptr);
+
+14 aptr++;
+
+15 }
+
+16
+
+17 return(0);
+
+18 }
+
+19
+
+20
+
+This is essentially the same code, but the array values are displayed using a pointer. In line 7, the aptr variable is declared. Line 9 is where it's set up. Because arrays are all shorthand for pointers, an ampersand isn't required. The array's name is a memory address.
+
+The aptr variable is used with the asterisk in the for loop to fetch the value from the memory address. The value is the same as the 0th element in the array at the first iteration of the loop. Look at line 14 now. The aptr pointer variable is set to a higher value.
+
+The pointer variable is a memory location in this format. The memory address is changed. But how much is it? Because aptr is an integer pointer, the memory address it holds is increased by the size of the array it represents. An integer variable—the amount of memory used by that variable. That happens to be the location of the array's next element, which is a bonus. Make a copy of the code and execute it.
+
+It works, as you can see. The array is traversed using the pointer variable. Pointers may be used to alter array data, which is an advantage. Variables are pointers. Take a look at the following code:
+
+1 #include <sdtio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 int array[] = { 11, 13, 17, 19 };
+
+6 int x;
+
+7
+
+8 for(x=0;x<4;x++)
+
+9 {
+
+10 printf(“Element %d: %d\n”,x+1,array[x]);
+
+11 }
+
+12
+
+13 return(0);
+
+14 }
+
+15
+
+16
+
+To create a pointer variable, add a new line below line 6 and then initialize the variable.
+
+1 #include <sdtio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 int array[] = { 11, 13, 17, 19 };
+
+6 int x;
+
+7 int *aptr;
+
+8
+
+9 aptr = array;
+
+10 for(x=0;x<4;x++)
+
+11 {
+
+12 printf(“Element %d: %d\n”,x+1,array[x]);
+
+13 }
+
+14
+
+15 return(0);
+
+16 }
+
+17
+
+18
+
+Using the pointer variable, set the value of the third element to zero. The pointer variable already references the first element in line 9. To refer to the third element, multiply its value by two. The asterisk operator is used to assign the value zero to that memory address.
+
+1 #include <sdtio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 int array[] = { 11, 13, 17, 19 };
+
+6 int x;
+
+7 int *aptr;
+
+8
+
+9 aptr = array;
+
+10 aptr = aptr + 2;
+
+11 *aptr = 0;
+
+12 for(x=0;x<4;x++)
+
+13 {
+
+14 printf(“Element %d: %d\n”,x+1,array[x]);
+
+15 }
+
+16
+
+17 return(0);
+
+18 }
+
+19
+
+20
+
+The rest of the program can be ignored. The code should be saved, built, and run. The third element is now 0, as you can see. It was manipulated with the use of a pointer.
+
+The statements on lines 10 and 11 are usually combined into a single line by most C language programmers. It appears as follows:
+
+1 #include <sdtio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 int array[] = { 11, 13, 17, 19 };
+
+6 int x;
+
+7 int *aptr;
+
+8
+
+9 aptr = array;
+
+10 *(aptr+2) = 0;
+
+11
+
+12 for(x=0;x<4;x++)
+
+13 {
+
+14 printf(“Element %d: %d\n”,x+1,array[x]);
+
+
+
+15 }
+
+16
+
+17 return(0);
+
+18 }
+
+19
+
+20
+
+
+
+Because the pointer must be located before the asterisk refers to the value, you must use parenthesis. After you've saved your changes, build and run the code. As you can see, the result is the same. This type of shorthand notation is frequently used. The fundamental reason for this is that it does not affect the value of the aptr pointer variable, which still refers to the array's base address.
+
+Using strings instead of numeric arrays may be the best approach to explain pointer and array operations. Take a look at the following code:
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 char *string = “I’m just a normal string.\n”;
+
+6
+
+7 puts(string);
+
+8
+
+9 return(0);
+
+10 }
+
+11
+
+12
+
+
+
+You can declare a string as a char pointer variable in addition to declaring it as a character array. The compiler makes the assignment, but the variable generated is a pointer. The variable pointer is utilized as an array name in the puts function in the code above. Build and test to ensure that this strategy isn't insane.
+
+This begs the question of how you'd display this string one character at a time if you're wary of pointers. Take a look at the following code:
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 char *string = “I’m just a normal string.\n”;
+
+6 int x = 0;
+
+7
+
+8 while(string[x])
+
+9 {
+
+
+
+10 putchar(string[x]);
+
+11 x++;
+
+12 }
+
+13
+
+14 return(0);
+
+15 }
+
+16
+
+17
+
+Yes, this is how the "chicken" does it. It works because array notation is just a fancy way of saying "points." In reality, many C programmers would do precisely what you see above and show the string using array notation. Make a copy of the code and execute it.
+
+It works, but you aren't reading this book for this method. We'll use pointers to replace the array notation. We only need one pointer, which we'll call 'ptr,' and an x isn't required.
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 char *string = “I’m just a normal string.\n”;
+
+6 char *ptr;
+
+7
+
+8 ptr = string;
+
+9 while(string[x])
+
+10 {
+
+11 putchar(string[x]);
+
+12 x++;
+
+13 }
+
+14
+
+15 return(0);
+
+16 }
+
+17
+
+18
+
+Because the string is already a pointer—it holds a memory location—no ampersand is required. The asterisk operator is used to analyze a character at a memory address. The condition of the while loop is the same as the condition of the putchar function.
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 char *string = “I’m just a normal string.\n”;
+
+6 char *ptr;
+
+7
+
+
+
+8 ptr = string;
+
+9 while(*ptr)
+
+10 {
+
+11 putchar(*ptr);
+
+12 ptr++;
+
+13 }
+
+14
+
+15 return(0);
+
+16 }
+
+17
+
+18
+
+The memory location is then incremented. After you've saved your changes, build and run the code. The output is still the same, as you can see. You might now take it a step further and avoid using the ‘ptr' variable entirely. Let's make the required changes to the code.
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 char *string = “I’m just a normal string.\n”;
+
+6
+
+7
+
+8
+
+9 while(*string)
+
+10 {
+
+11 putchar(*string);
+
+12 string++;
+
+13 }
+
+14
+
+15 return(0);
+
+16 }
+
+17
+
+18
+
+Save, compile, and execute the code. The problem is that changing the string variable causes it to lose its memory base position. That isn't an issue with this code. However, it could be an issue in other circumstances.
+
+
+
+
+
+Pointer Functions
+
+
+
+Throughout your C programming career, pointers will be utilized frequently whenever functions require or return pointer values. It'll surprise you how often this happens in C programming. We'll go through how to address pointer functions and even alter one in this section. We'll also talk about the numerous
+
+How pointers are used in functions, how pointers are transferred to functions, and how pointers are returned from functions are all covered.
+
+Throughout this book, we've used functions on several occasions. It's simply that you didn't realize it was happening. Take a look at the following code:
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 char x;
+
+6
+
+7 printf(“Type a character: “);
+
+8 scanf(“%c”,&x);
+
+9 printf(“Character %c\n”,x);
+
+10
+
+11 return(0);
+
+12 }
+
+13
+
+14
+
+The scanf function, as you can see from the code above, takes use of pointer values, specifically the variable it scans and its corresponding memory addresses. The ampersand symbol scans the memory address of variable x and passes it back to the function—scanf on line 8 of the code.
+
+As you might have observed, the value produced by scanf—the return value—is not used in its function. Instead, the function uses a pointer to assign the value to variable x directly. Isn't it clever?
+
+The ampersand sign is not required for the variable name in the code below. Why? The reason for this is that the variable name is essentially an array.
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 char name[15]; /* room for 14 characters */
+
+6
+
+7 printf(“Your name? “);
+
+8 scanf(“%s”,name);
+
+9 printf(“You are %s.\n”,name);
+
+10
+
+11 return(0);
+
+12 }
+
+13
+
+14
+
+Arrays can be thought of as cloaked pointers; the ampersand sign isn't required. You can create your own pointer-based C language function. You only need to specify a specific point as a return value or an argument. Take note of the following code:
+
+1 #include <stdio.h>
+
+2
+
+3 void minus10(int *v);
+
+4
+
+5 int main()
+
+6 {
+
+7 int value = 100;
+
+8
+
+9 printf(“Value is
+
+10 minus10(&value);
+
+11 printf(“Value is %d\n”,value);
+
+12
+
+13 return(0);
+
+14 }
+
+15
+
+16 void minus10(int *v)
+
+17 {
+
+18 *v = *v – 10;
+
+19 }
+
+20
+
+21 %d\n”,value);
+
+The minus ten functions are prototyped, as you can see in line 3 of the code above. It also accepts one argument in the form of a pointer variable. Because the pointer variable is essentially a memory address, the function takes that as an argument. The memory location/address of the variable value is subsequently passed to the function, as seen in line 10. The ampersand symbol, as is customary, retrieves that address.
+
+The asterisk is used to alter the value of the transferred variable within the function. There is no need for a returned value because the variable's values are examined in memory right away. Create and run this program.
+
+As you can see, the function has an immediate effect on the variable's value. This is true even though the memory address was the only thing passed to the function, and there was no return value. Take a look at the following code:
+
+1 #include <stdio.h>
+
+2 #include <string.h>
+
+3
+
+4 char *longer(char *s1, char *s2);
+
+5
+
+6 int main()
+
+7 {
+
+8 char *string1 = “A long time ago”;
+
+9 char *string2 = “In a galaxy far, far away”;
+
+10 char *result;
+
+11
+
+12 result = longer(string1,string2);
+
+13 printf(“String ‘%s’ is longer.\n”,result);
+
+14
+
+15 return(0);
+
+16 }
+
+17
+
+18 char *longer(char *s1, char *s2)
+
+19 {
+
+20 int len1,len2;
+
+21
+
+22 len1 = strlen(s1);
+
+23 len2 = strlen(s2);
+
+24
+
+25 if( len 1 > len 2 )
+
+26 return(s1);
+
+27 else
+
+28 return(s2);
+
+29 }
+
+30
+
+31
+
+You can see that a pointer function is declared in the code above. Longer basically returns the character pointer, which is the memory address of the beginning of a string stored in memory. From line 18 onwards, the function compares the two strings. It compares the length of the string in particular. The memory address of the string with the most extended length is returned.
+
+It's worth noting that the string isn't the one that returns to the function. The memory location/address of the string is the one that returns. This address is subsequently saved in the pointer result, which is printed on line 13. Create and run this program. As you can see, the longest string is presented.
+
+String manipulation may also be possible within functions. As previously indicated, you are not passing any string in particular. You're essentially just supplying the memory location/address where it should start. Take a look at the following code:
+
+1 #include <stdio.h>
+
+2 #include <ctype.h>
+
+3
+
+4 void shouting(char
+
+5
+
+6 int main()
+
+7 {
+
+8 char string[64];*input);
+
+9
+
+10 printf(“Type some text: “);
+
+11 fgets(string,64,stdin);
+
+12 printf(“You typed:\n%s\n”,string);
+
+13 shouting(string);
+
+14 printf(“If you were shouting, you’d typed:\n%s\n”,string);
+
+15
+
+16 return(0);
+
+17 }
+
+18
+
+19 void shouting(char *input)
+
+20 {
+
+21 while(*input)
+
+22 {
+
+23 *input = toupper(*input);
+
+24 input++;
+
+25 }
+
+26 }
+
+27
+
+28
+
+The code above shows how to utilize pointers to alter a string in a function where the function isn't required to return any value. The function ‘shouting' accepts a string at line 19 and chews through it one character at a time. The toupper function receives every character scanned.
+
+If you recall previous chapters, the toupper function turns any lowercase letter to uppercase, hence the name. Create and run this program. As you can see, the software does a fantastic job. It all works without the requirement for the function to return any value. Take a look at the following code:
+
+1 #include <stdio.h>
+
+2 #include <ctype.h>
+
+3
+
+4 char *encrypt(char *input);
+
+5
+
+6 int main()
+
+7 {
+
+8 char *instructions = “Deliver the package to Berlin”;
+
+9
+
+10 printf(“Here are your secret instructions:\n%s\n”,encrypt(instructions));
+
+11
+
+12 return(0);
+
+13 }
+
+14
+
+15 char *encrypt(char *input)
+
+16 {
+
+
+
+17 char output[64];
+
+18 int x = 0;
+
+19
+
+20 while(*input)
+
+21 {
+
+22 if(isalpha(*input))
+
+23 output[x] = *input + 1;
+
+24 else
+
+25 output[x] = *input;
+
+26 x++;
+
+27 input++;
+
+28 }
+
+29 }
+
+30
+
+31
+
+The encrypt function returns a string in the example code above. The method receives an array of characters (a string), manipulates it, and returns a new string while maintaining the original string unaltered. Is this going to work? Let's take a closer look. Create and run this program.
+
+After running the code, you'll almost certainly get a compiler warning. It's an important cautionary message that explains why the code's output is suspect. Contrary to popular belief, pointers are not the fault in this case. What's going on here is similar to what we saw in a previous chapter concerning functions, where all variables are treated as 'local' when utilized within functions.
+
+All variables used throughout the function's execution are discarded at the end. This is also true when using the array ‘output' with the method ‘encrypt.'
+
+You may solve this problem by using the term static. Insert the static keyword at the start of the variable declaration on line 17 of the code.
+
+1 #include <stdio.h>
+
+2 #include <ctype.h>
+
+3
+
+4 char *encrypt(char *input);
+
+5
+
+6 int main()
+
+7 {
+
+8 char *instructions = “Deliver the package to Berlin”;
+
+9
+
+10 printf(“Here are your secret instructions:\n%s\n”,encrypt(instructions));
+
+11
+
+12 return(0);
+
+13 }
+
+14
+
+15 char *encrypt(char *input)
+
+16 {
+
+17 static char output[64];
+
+18 int x = 0;
+
+19
+
+20 while(*input)
+
+21 {
+
+22 if(isalpha(*input))
+
+23 output[x] = *input + 1;
+
+24 else
+
+25 output[x] = *input;
+
+26 x++;
+
+27 input++;
+
+28 }
+
+29 }
+
+30
+
+31
+
+With the static keyword in place, the program may now keep the array's contents after the function has been completed. The function does not change. To put it another way, it hasn't changed. This code should be saved, built, and run. The encrypt function just returns the string's memory address/location. The print function refers to the other characters, which are still in memory. Keep in mind that none of this will work unless the returned string is static.
+
+Please keep in mind that this rule does not apply to single values. Functions in the C programming language are intended to return single values, which can include pointers. You must ensure that any other arrays, strings, or other types of variables within a function are static. Otherwise, when the function is finished, the value is not saved.
+
+
+
+
+
+Pointer Arrays
+
+
+
+Pointers, like variables, are variables, as we already stated. It's a type of variable that keeps track of a specific memory region. Because it's a variable, it's also possible to set pointers inside arrays, which some people find terrifying. The central topic of this section is how and why pointers are used inside arrays. In this article, we'll look at how to set up a pointer array in C.
+
+We'll use strings as an example for simplicity. You'll learn how to obtain strings, convert them to other notations, and evaluate strings. Pointer arrays are just a collection of memory addresses. When and why would you need an array of memory locations (a stockpile)? Using a string array, for example, is an excellent example.
+
+Take a look at the following code:
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 char *gang[5] = {
+
+6 “Spanky”,
+
+7 “Buckwheat,”
+
+8 “Alfalfa,”
+
+9 “Darla”,
+
+10 “Pete the Pup”
+
+11 };
+
+12 int x;
+
+13
+
+14 for(x=0;x<5;x++)
+
+15 printf(“%s\n”,gang[x]);
+
+16
+
+17 return(0);
+
+18 }
+
+19
+
+20
+
+The code exactly creates five memory addresses/locations. These addresses are pre-configured for the strings listed. A string array is declared, even though it is technically incorrect. A for loop is used to send the strings to standard output, which can be seen online 14 of the code. Make a copy of the code and execute it.
+
+Each of the five strings is printed in the output, as you can see. Modify the code to show that the array is a collection of memory locations. Change the percent s placeholder in line 15 to percent p. Remember that the memory location or address placeholder is percent p.
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 char *gang[5] = {
+
+6 “Spanky”,
+
+7 “Buckwheat,”
+
+8 “Alfalfa,”
+
+9 “Darla”,
+
+10 “Pete the Pup”
+
+11 };
+
+12 int x;
+
+13
+
+14 for(x=0;x<5;x++)
+
+15 printf(“%p\n”,gang[x]);
+
+16
+
+17 return(0);
+
+18 }
+
+19
+
+20
+
+After saving the changes, build and run the code. A list of memory locations should now appear. Each memory address does relate to a string since the compiler created space for the strings and added null characters at the end. By the way, defining a two-dimensional array is significantly less efficient than this method of storing numerous lines.
+
+In that situation, the array must be declared so that each string takes up the same amount of storage as the longest string. That isn't an issue with our code's pointer array declaration. Take a look at the following code:
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 char *gang[5] = {
+
+6 “Spanky”,
+
+7 “Buckwheat,”
+
+8 “Alfalfa”,
+
+9 “Darla”,
+
+10 “Pete the Pup”
+
+11 };
+
+12 int x;
+
+13 char *ptr;
+
+14
+
+15 for(x=0;x<5;x++)
+
+16 {
+
+17 cptr = gang[x];
+
+18 while(*cptr)
+
+19 {
+
+20 putchar(*cptr);
+
+21 cptr++;
+
+22 }
+
+23 putchar(‘\n’);
+
+24 }
+
+25
+
+26 return(0);
+
+27 }
+
+28
+
+29
+
+This is a modified version of the prior code—the for loop iterates over each pointer in the array. The base address of each string is assigned to the pointer variable ptr for each iteration. The lines are then churned through one by one in a while loop. Create and run this program.
+
+Although the process of printing each string was different, the result is the same. By going over the memory regions where the characters are stored, the pointer variable ptr shows each character. Something about this code may now be bothering you. If you haven't already figured it out, that's line 17. It is written in array notation.
+
+Converting this terrible notation to pointer notation might be a preferable solution. To accomplish so, make the following code change:
+
+1 #include <stdio.h>
+
+2
+
+3 int main()
+
+4 {
+
+5 char *gang[5] = {
+
+6 “Spanky”,
+
+7 “Buckwheat,”
+
+8 “Alfalfa”,
+
+9 “Darla”,
+
+10 “Pete the Pup”
+
+11 };
+
+12 int x;
+
+13 char *ptr;
+
+14
+
+15 for(x=0;x<5;x++)
+
+16 {
+
+17 cptr = *(gang+x);
+
+18 while(*cptr)
+
+19 {
+
+20 putchar(*cptr);
+
+21 cptr++;
+
+22 }
+
+23 putchar(‘\n’);
+
+24 }
+
+25
+
+26 return(0);
+
+27 }
+
+28
+
+29
+
+The memory locations recorded in the gang variable are used in this notation. The memory locations, not the string, are utilized. The value x is then added to each, and the loop refers to the next array member, which is the string's base address, each time. Because the memory location is altered first, it must be contained in parenthesis. The contents of that place are then referenced later (the asterisk gets the string). After you've saved your changes, build and run the code.
+
+As you can see, the result is the same. We can do a lot more with pointers here, and we could get into pointers to information and all the double-asterisk notation. But that's a topic for a more advanced audience level. Suppose you see the dreaded double asterisk pointer notation. In that case, you're almost certainly dealing with an array of strings, or more particularly, a variety of memory addresses for each of those strings.
+
+
+
+
+
+Conclusion
+
+
+
+That is all there is to it. That concludes the fundamentals of C programming. This is frightening, and the only reason anyone is afraid of programming in C is that they lack a solid understanding of the language's fundamentals. Everything becomes simple if you learn the core syntax and numerous features of C.
+
+While they may appear complicated at this stage, the subjects addressed in this book are pretty simple. We're convinced that everything you've learned in this book will help you master the fundamentals of C. This book will also assist you in adequately comprehending the most sophisticated levels of the C language, such as object-oriented C programming.
+
+We'd want to express our gratitude for purchasing this book. We hope you learned a lot about the C programming language during this course. As you know the nuances of this fantastic programming language, please use this book as a beginner's quick guide.
+
+At this point, we'd like to urge you to play around with the C programming language. Make your programs and see where they take you.
+
+The C programming language is a fantastic tool for programmers. We hope that this book serves as a springboard for you to become a well-rounded programmer.
+
+
+
+
+
